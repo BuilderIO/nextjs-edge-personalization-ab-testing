@@ -6,6 +6,13 @@ Dynamic at the speed of static ⚡
 
 ![Video demo of personalized site](https://user-images.githubusercontent.com/844291/187516199-bd09d52b-f44e-4c41-8f00-2079ab8820bc.gif)
 
+## Contents
+
+- [How this works](#how-this-works)
+- [Get Started](#get-started)
+- [Explore the code](#explore-the-code)
+- [Next Steps](#next-steps)
+
 ## How this works
 
 <img alt="Diagram of the personalization strategy" src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F4e7efe97686642f4805552bc075263e3">
@@ -108,7 +115,6 @@ Some key places to look in the codebase:
 - [site/middleware.ts](site/middleware.ts) is where we create and configure the edge middleware for personalizing pages
 
 <img width="620" alt="Diagram of the tech stack used" src="https://user-images.githubusercontent.com/844291/187518090-e112e48c-e76e-41b5-9f81-8ecbf10a18c6.png">
-
 
 ## Next Steps
 
