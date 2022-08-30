@@ -2,6 +2,8 @@
 
 This is a fork of [Next.js Commerce](https://github.com/vercel/commerce) with [Builder.io](https://www.builder.io) integrated and using [Edge Middleware](https://vercel.com/docs/concepts/functions/edge-middleware) to personalize pages with great performance.
 
+**⚡ Dynamic at the speed of static ⚡**
+
 ## How this works
 
 <img alt="Diagram of the personalization strategy" src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F4e7efe97686642f4805552bc075263e3">
