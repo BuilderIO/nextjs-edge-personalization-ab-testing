@@ -6,7 +6,6 @@ This is a fork of [Next.js Commerce](https://github.com/vercel/commerce) with [B
 
 ![Video demo of personalized site](https://user-images.githubusercontent.com/844291/187516199-bd09d52b-f44e-4c41-8f00-2079ab8820bc.gif)
 
-
 ## How this works
 
 <img alt="Diagram of the personalization strategy" src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F4e7efe97686642f4805552bc075263e3">
@@ -17,13 +16,15 @@ For instance, if you have a `pages/page.tsx`, you can rename it to `pages/page/[
 
 You can now have your page return personalized content based on what is in the hash, and this is purely automatic via what `personalization.*` cookies are present
 
-You can set them at any time to target off of, for instance
+You can set them at any time to target off of, for instance:
 
 ```js
 Cookies.set('personalization.returnVisitor', 'true')
 ```
 
 And now your `/page` will be rewritten to `/page/returnVisitor=true` when that cookie is present, and be handled accordingly
+
+Then, you can visually create and edit pages, sections, and data on your site with Builder.io's visual editor, dragging and dropping with your React components and publish unlimited variations to your site without any code or deploys needed:
 
 ## Get Started
 
