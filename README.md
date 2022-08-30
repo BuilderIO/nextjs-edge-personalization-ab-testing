@@ -62,8 +62,8 @@ At the top of the editor, you can configure which audiences should see this page
 
 To get your site live, you can [deploy it to Vercel](https://nextjs.org/learn/basics/deploying-nextjs-app/deploy). Be sure to use the following configuration:
 
-**Framework preset**: Next.js
-**Build command**: `cd .. && yarn build`
+- **Framework preset**: Next.js
+- **Build command**: `cd .. && yarn build`
 
 <img alt="Screenshot of the Vercel configuration" src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2F2513e3f0ac804cc2b313a6e6e87876ba">
 
