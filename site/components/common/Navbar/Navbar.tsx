@@ -8,6 +8,7 @@ import { Searchbar, UserNav } from '@components/common'
 interface Link {
   href: string
   label: string
+  external?: boolean
 }
 
 interface NavbarProps {
@@ -27,7 +28,12 @@ const Navbar: FC<NavbarProps> = ({ links }) => (
           <nav className={s.navMenu}>
             {links?.map((l) => (
               <Link href={l.href} key={l.href}>
-                <a className={s.link}>{l.label}</a>
+                <a
+                  {...(l.external ? { target: '_blank' } : {})}
+                  className={s.link}
+                >
+                  {l.label}
+                </a>
               </Link>
             ))}
           </nav>
