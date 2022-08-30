@@ -41,9 +41,16 @@ Then, you can visually create and edit pages, sections, and data on your site wi
 
 ### Run Locally
 
-After you clone this repo, from the project root:
+#### Coone this repo
+
+```bash
+git clone https://github.com/BuilderIO/nextjs-edge-personalization-demo.git
+cd nextjs-edge-personalization-demo
+```
 
 #### Run the dev server
+
+Next, from the project root:
 
 ```bash
 yarn # run this command in root folder of the mono repo
