@@ -8,6 +8,7 @@ import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 import { parsePersonalizedURL } from '@builder.io/personalization-utils/next'
 import { Layout } from '@components/common'
 import { useEffect } from 'react'
+import { addAsyncProps } from '../lib/add-async-props'
 
 builder.init(builderConfig.apiKey)
 
@@ -28,6 +29,10 @@ export async function getStaticProps({
         cachebust: true,
       })
       .promise()) || null
+
+  if (page) {
+    await addAsyncProps(page)
+  }
 
   return {
     props: {

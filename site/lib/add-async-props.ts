@@ -4,7 +4,7 @@ import { getAsyncProps } from '@builder.io/utils'
 
 // Add async props to the components used in Builder for server side rendering
 // More info: https://github.com/BuilderIO/builder/tree/main/packages/utils#getasyncprops
-export async function getBuilderContent(content: BuilderContent) {
+export async function addAsyncProps(content: BuilderContent) {
   if (!content) {
     return
   }
@@ -13,7 +13,7 @@ export async function getBuilderContent(content: BuilderContent) {
     // Prefetch the `product` prop for server side rendering
     'Product Cell': async (props: { slug: string }) => {
       return {
-        product: commerce
+        product: await commerce
           .getProduct({
             variables: { slug: props.slug },
           })

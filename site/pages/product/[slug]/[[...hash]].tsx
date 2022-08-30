@@ -12,6 +12,7 @@ import builderConfig from '../../../config/builder'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import Cookies from 'js-cookie'
+import { addAsyncProps } from '../../../lib/add-async-props'
 
 builder.init(builderConfig.apiKey)
 
@@ -53,6 +54,10 @@ export async function getStaticProps({
 
   if (!product) {
     throw new Error(`Product with slug '${params!.slug}' not found`)
+  }
+
+  if (builderSection) {
+    await addAsyncProps(builderSection)
   }
 
   return {
