@@ -45,7 +45,7 @@ Builder.registerComponent(
     image: 'https://tabler-icons.io/static/tabler-icons/icons-png/stars.png',
     inputs: [
       {
-        name: 'rating',
+        name: 'value',
         type: 'number',
         defaultValue: 4,
       },

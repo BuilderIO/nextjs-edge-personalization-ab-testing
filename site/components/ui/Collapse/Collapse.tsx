@@ -23,14 +23,8 @@ const Collapse: FC<CollapseProps> = ({ title, children }) => {
   const toggle = () => setActive((x) => !x)
 
   return (
-    <div
-      className={s.root}
-      role="button"
-      tabIndex={0}
-      aria-expanded={isActive}
-      onClick={toggle}
-    >
-      <div className={s.header}>
+    <div className={s.root} role="button" tabIndex={0} aria-expanded={isActive}>
+      <div onClick={toggle} className={s.header}>
         <ChevronRight className={cn(s.icon, { [s.open]: isActive })} />
         <span className={s.label}>{title}</span>
       </div>
