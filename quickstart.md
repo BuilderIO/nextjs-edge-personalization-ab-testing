@@ -1,5 +1,8 @@
 ## Quick Start
 
+### Unzip the demo space files
+The file `builder-demo-space.zip` contains the space clone that we're going to use to initialize your new space in the following steps.
+
 #### Get your Builder.io private key
 
 Head over to your [organization settings page](https://builder.io/account/organization?root=true) and create a
