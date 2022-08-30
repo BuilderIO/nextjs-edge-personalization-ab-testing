@@ -49,3 +49,23 @@ Once you deploy to vercel, you can update your Preview URL to use the live URL s
 E.g. if your site is now live at `https://my-site.vercel.app`, you can go back to [builder.io/models](https://builder.io/models), choose the `page` model, and update your Preview URL to `https://my-site.vercel.app` and save.
 
 <img alt="Screenshot of updating your Preview URL" src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2F09ab3eadebe5453883f77e60c97a9eba">
+
+### Explore the code
+
+Some key places to look
+
+- [site/config/builder.ts](site/config/builder.ts) is where we configure Builder.io custom components and settings
+- <a href="site/pages/[[...pages]].tsx">site/pages/[[...pages]].tsx</a> is where we integrate page building, including fetching data from Builder.io and rendering it
+- [site/middleware.ts](site/middleware.ts) is where we create and configure the edge middleware for personalizing pages
+
+### Next Steps
+
+Learn more about
+
+- Developing with [Builder.io](https://www.builder.io/c/docs/developers)
+- Registering custom components with [Builder.io](https://www.builder.io/c/docs/custom-components-intro)
+- Learn more about [Next.js Middleware](https://nextjs.org/docs/advanced-features/middleware) and [Vercel Edge Functions](https://vercel.com/docs/concepts/functions/edge-functions)
+
+### Troubleshooting
+
+Run into any issues? [Chat with us in discord](https://discord.gg/TjSStcmuWN)!
