@@ -5,7 +5,7 @@ import builderConfig from '../config/builder'
 import DefaultErrorPage from 'next/error'
 import Head from 'next/head'
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
-import { parsePersonalizedURL } from '@builder.io/personalization-utils/dist/next'
+import { parsePersonalizedURL } from '@builder.io/personalization-utils/next'
 import { Layout } from '@components/common'
 import { useEffect } from 'react'
 

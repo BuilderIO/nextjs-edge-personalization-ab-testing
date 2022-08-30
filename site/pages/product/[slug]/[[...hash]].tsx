@@ -6,7 +6,7 @@ import type {
 import commerce from '@lib/api/commerce'
 import { Layout } from '@components/common'
 import { ProductView } from '@components/product'
-import { parsePersonalizedURL } from '@builder.io/personalization-utils/dist/next'
+import { parsePersonalizedURL } from '@builder.io/personalization-utils/next'
 import { useIsPreviewing, BuilderComponent, builder } from '@builder.io/react'
 import builderConfig from '../../../config/builder'
 import { useRouter } from 'next/router'

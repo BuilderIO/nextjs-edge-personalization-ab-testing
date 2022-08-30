@@ -1,5 +1,5 @@
 import { NextResponse, NextRequest } from 'next/server'
-import { getPersonlizedURL } from '@builder.io/personalization-utils/dist/next'
+import { getPersonlizedURL } from '@builder.io/personalization-utils/next'
 
 // Any page not included in here needs to handle the personalization rewrite
 const noPersonalizePaths = [
