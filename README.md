@@ -4,6 +4,9 @@ This is a fork of [Next.js Commerce](https://github.com/vercel/commerce) with [B
 
 **⚡ Dynamic at the speed of static ⚡**
 
+![Video demo of personalized site](https://user-images.githubusercontent.com/844291/187516199-bd09d52b-f44e-4c41-8f00-2079ab8820bc.gif)
+
+
 ## How this works
 
 <img alt="Diagram of the personalization strategy" src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F4e7efe97686642f4805552bc075263e3">
