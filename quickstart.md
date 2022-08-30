@@ -1,8 +1,13 @@
 ## Quick Start
 
-### Unzip the demo space files
+### Clone repo and unzip the demo space files
 
 The file `builder-demo-space.zip` contains the space clone that we're going to use to initialize your new space in the following steps.
+```
+git clone git@github.com:BuilderIO/nextjs-edge-personalization-demo.git
+cd nextjs-edge-personalization-demo
+unzip builder-demo-space.zip
+```
 
 #### Get your Builder.io private key
 
