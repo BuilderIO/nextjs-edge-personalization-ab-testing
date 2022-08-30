@@ -27,6 +27,23 @@ Next, head to [builder.io/models](https://builder.io/models) and choose the `pag
 
 <img src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2Fb3bd5b2015e3450985cc69910e368c9d" alt="Screenshot of adding your Preivew URL in Builder.io">
 
+#### Configure personalization attributes
+
+Now, in Builder.io add some [targeting attributes](https://www.builder.io/c/docs/custom-targeting-attributes) to begin personalizing your content on. Head to [builder.io/account](https://builder.io/account) and click on the pencil next to `Custom targeting attributes` and add some attributes, for instance like you see here:
+
+<img src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2Fff38618c937a4adda2fbaba4a445a38c" alt="Screenshots of the targeting UI configuration">
+
+Above, we create an attribute called `returnVisitor` that is a boolean that we set [here](site/pages/_app.tsx#L19) so it can be read by edge middleware, as well as an attribute called `audience` that is an `enum` of a couple made up segments like `shirt-shipper` and `jacket-shopper` that we set <a href="site/pages/product/%5Bslug%5D/%5B%5B...hash%5D%5D.tsx#L96:L104">here</a> via browsing history (could alternatively be set upon add to cart or other actions).
+
+Note: generally `audiences` should come from a CDP, like
+
+```js
+myCdp.getAudiences().then((audiences) => {
+  // assuming audiences is an array of strings, like ['shirt-shipper', 'jacket-shopper']
+  Cookies.set('personalization.audience', JSON.stringify(audiences))
+})
+```
+
 #### Create a page
 
 Now, go to [builder.io/content](https://builder.io/content) and choose the `+ new` button, choose `page`, and drag and drop to create a page on your Next.js site with your React components!
@@ -34,6 +51,12 @@ Now, go to [builder.io/content](https://builder.io/content) and choose the `+ ne
 <img src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2F4c04f8deda7d4f9d89868323d18d5310" alt="Image of creating a page and editing visually">
 
 > :warning: **If you are having trouble connecting**: be sure you are running your dev server on `http://localhost:3000` by running `yarn dev` from this project root like shown [above](#run-the-dev-server)
+
+#### Target and publish your page
+
+At the top of the editor, you can configure which audiences should see this page variant, and publish.
+
+<img src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2Fe1d25b04a2914bcbb59912140939bf1a" alt="Screenshots of targeting your page">
 
 ### Deploy to Vercel
 
