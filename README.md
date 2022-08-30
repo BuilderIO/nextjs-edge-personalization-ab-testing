@@ -1,5 +1,7 @@
 # Next.js + Builder.io Edge Personalization Demo
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FBuilderIO%2Fnextjs-edge-personalization-demo&build-command=cd%20..%20%;%20yarn%20build&root-directory=site)
+
 This is a fork of [Next.js Commerce](https://github.com/vercel/commerce) with [Builder.io](https://www.builder.io) integrated and using [Edge Middleware](https://vercel.com/docs/concepts/functions/edge-middleware) to personalize pages with great performance.
 
 Dynamic at the speed of static ⚡
