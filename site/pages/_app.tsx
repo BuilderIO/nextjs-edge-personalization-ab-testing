@@ -1,7 +1,7 @@
 import '@assets/main.css'
 import '@assets/chrome-bug.css'
 import 'keen-slider/keen-slider.min.css'
-
+import Cookies from 'js-cookie'
 import { FC, useEffect } from 'react'
 import type { AppProps } from 'next/app'
 import { Head } from '@components/common'
@@ -14,6 +14,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     document.body.classList?.remove('loading')
+
+    addEventListener('visibilitychange', (event) => {
+      Cookies.set('personalization.returnVisitor', 'true', { expires: 365 })
+    })
   }, [])
 
   return (

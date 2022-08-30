@@ -108,10 +108,16 @@ const Layout: React.FC<Props> = ({
 }) => {
   const { acceptedCookies, onAcceptCookies } = useAcceptCookies()
   const { locale = 'en-US' } = useRouter()
-  const navBarlinks = categories.slice(0, 2).map((c) => ({
-    label: c.name,
-    href: `/search/${c.slug}`,
-  }))
+  const navBarlinks = [
+    {
+      label: 'The Shirt',
+      href: '/product/new-short-sleeve-t-shirt',
+    },
+    {
+      label: 'The Jacket',
+      href: '/product/lightweight-jacket',
+    },
+  ]
 
   return (
     <CommerceProvider locale={locale}>
@@ -123,15 +129,6 @@ const Layout: React.FC<Props> = ({
         <CheckoutProvider>
           <SidebarUI links={navBarlinks} />
         </CheckoutProvider>
-        <FeatureBar
-          title="This site uses cookies to improve your experience. By clicking, you agree to our Privacy Policy."
-          hide={acceptedCookies}
-          action={
-            <Button className="mx-5" onClick={() => onAcceptCookies()}>
-              Accept cookies
-            </Button>
-          }
-        />
       </div>
     </CommerceProvider>
   )

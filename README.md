@@ -1,198 +1,51 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fcommerce&project-name=commerce&repo-name=commerce&demo-title=Next.js%20Commerce&demo-description=An%20all-in-one%20starter%20kit%20for%20high-performance%20e-commerce%20sites.&demo-url=https%3A%2F%2Fdemo.vercel.store&demo-image=https%3A%2F%2Fbigcommerce-demo-asset-ksvtgfvnd.vercel.app%2Fbigcommerce.png&integration-ids=oac_MuWZiE4jtmQ2ejZQaQ7ncuDT,oac_9HSKtXld74NG0srzdxSiBGty&skippable-integrations=1&root-directory=site&build-command=cd%20..%20%26%26%20yarn%20build)
+# Next.js + Builder.io Edge Personalization Demo
 
-# Next.js Commerce
+This is a fork of [Next.js Commerce](https://github.com/vercel/commerce) with [Builder.io](https://www.builder.io) integrated and using [Edge Middleware](https://vercel.com/docs/concepts/functions/edge-middleware) to personalize pages with great performance.
 
-The all-in-one starter kit for high-performance e-commerce sites. With a few clicks, Next.js developers can clone, deploy and fully customize their own store.
-Start right now at [nextjs.org/commerce](https://nextjs.org/commerce)
+## Get Started
 
-Demo live at: [demo.vercel.store](https://demo.vercel.store/)
+### Run Locally
 
-- Shopify Demo: https://shopify.vercel.store/
-- Swell Demo: https://swell.vercel.store/
-- BigCommerce Demo: https://bigcommerce.vercel.store/
-- Vendure Demo: https://vendure.vercel.store
-- Saleor Demo: https://saleor.vercel.store/
-- Ordercloud Demo: https://ordercloud.vercel.store/
-- Spree Demo: https://spree.vercel.store/
-- Kibo Commerce Demo: https://kibocommerce.vercel.store/
-- Commerce.js Demo: https://commercejs.vercel.store/
-- SalesForce Cloud Commerce Demo: https://salesforce-cloud-commerce.vercel.store/
+After you clone this repo, from the project root:
 
-## Run minimal version locally
-
-> To run a minimal version of Next.js Commerce you can start with the default local provider `@vercel/commerce-local` that has disabled all features (cart, auth) and use static files for the backend
+#### Run the dev server
 
 ```bash
 yarn # run this command in root folder of the mono repo
 yarn dev
 ```
 
-> If you encounter any problems while installing and running for the first time, please see the Troubleshoot section
+#### Connect Builder.io
 
-## Features
+To connect [Builder.io](https://www.builder.io), create a [free account](https://www.builder.io/signup), from your account settings copy your Public API Key and paste it into [site/config/builder.ts](site/config/builder.ts#L6:L6)
 
-- Performant by default
-- SEO Ready
-- Internationalization
-- Responsive
-- UI Components
-- Theming
-- Standardized Data Hooks
-- Integrations - Integrate seamlessly with the most common ecommerce platforms.
-- Dark Mode Support
+<img src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2Fafd38ce9af0b4f25988759f8c5936fe5" alt="Screenshot of copying your API key">
 
-## Integrations
+#### Set your Preview URL
 
-Next.js Commerce integrates out-of-the-box with BigCommerce, Shopify, Swell, Saleor, Vendure, Spree and Commerce.js. We plan to support all major ecommerce backends.
+Next, head to [builder.io/models](https://builder.io/models) and choose the `page` model and enter `http://localhost:3000` as the [preview URL](https://www.builder.io/c/docs/guides/preview-url), and then hit `save` at the top right of the page.
 
-## Considerations
+<img src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2Fb3bd5b2015e3450985cc69910e368c9d" alt="Screenshot of adding your Preivew URL in Builder.io">
 
-- `packages/commerce` contains all types, helpers and functions to be used as base to build a new **provider**.
-- **Providers** live under `packages`'s root folder and they will extend Next.js Commerce types and functionality (`packages/commerce`).
-- We have a **Features API** to ensure feature parity between the UI and the Provider. The UI should update accordingly and no extra code should be bundled. All extra configuration for features will live under `features` in `commerce.config.json` and if needed it can also be accessed programatically.
-- Each **provider** should add its corresponding `next.config.js` and `commerce.config.json` adding specific data related to the provider. For example in case of BigCommerce, the images CDN and additional API routes.
+#### Create a page
 
-## Configuration
+Now, go to [builder.io/content](https://builder.io/content) and choose the `+ new` button, choose `page`, and drag and drop to create a page on your Next.js site with your React components!
 
-### How to change providers
+<img src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2F4c04f8deda7d4f9d89868323d18d5310" alt="Image of creating a page and editing visually">
 
-Open `site/.env.local` and change the value of `COMMERCE_PROVIDER` to the provider you would like to use, then set the environment variables for that provider (use `site/.env.template` as the base).
+> :warning: **If you are having trouble connecting**: be sure you are running your dev server on `http://localhost:3000` by running `yarn dev` from this project root like shown [above](#run-the-dev-server)
 
-The setup for Shopify would look like this for example:
+### Deploy to Vercel
 
-```
-COMMERCE_PROVIDER=@vercel/commerce-shopify
-NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxx
-NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN=xxxxxxx.myshopify.com
-```
+To get your site live, you can [deploy it to Vercel](https://nextjs.org/learn/basics/deploying-nextjs-app/deploy). Be sure to use the following configuration:
 
-### Features
+**Framework preset**: Next.js
+**Build command**: `cd .. && yarn build`
 
-Every provider defines the features that it supports under `packages/{provider}/src/commerce.config.json`
+<img alt="Screenshot of the Vercel configuration" src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2F2513e3f0ac804cc2b313a6e6e87876ba">
 
-#### Features Available
+Once you deploy to vercel, you can update your Preview URL to use the live URL so now others on your team can create content on your new site with Builder.io.
 
-The following features can be enabled or disabled. This means that the UI will remove all code related to the feature.
-For example: Turning `cart` off will disable Cart capabilities.
+E.g. if your site is now live at `https://my-site.vercel.app`, you can go back to [builder.io/models](https://builder.io/models), choose the `page` model, and update your Preview URL to `https://my-site.vercel.app` and save.
 
-- cart
-- search
-- wishlist
-- customerAuth
-- customCheckout
-
-#### How to turn Features on and off
-
-> NOTE: The selected provider should support the feature that you are toggling. (This means that you can't turn wishlist on if the provider doesn't support this functionality out the box)
-
-- Open `site/commerce.config.json`
-- You'll see a config file like this:
-  ```json
-  {
-    "features": {
-      "wishlist": false,
-      "customCheckout": true
-    }
-  }
-  ```
-- Turn `wishlist` on by setting `wishlist` to `true`.
-- Run the app and the wishlist functionality should be back on.
-
-### How to create a new provider
-
-Follow our docs for [Adding a new Commerce Provider](packages/commerce/new-provider.md).
-
-If you succeeded building a provider, submit a PR with a valid demo and we'll review it asap.
-
-## Contribute
-
-Our commitment to Open Source can be found [here](https://vercel.com/oss).
-
-1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device.
-2. Create a new branch `git checkout -b MY_BRANCH_NAME`
-3. Install the dependencies: `yarn`
-4. Duplicate `site/.env.template` and rename it to `site/.env.local`
-5. Add proper store values to `site/.env.local`
-6. Run `cd site` and `yarn dev` to build and watch for code changes
-7. Run `yarn turbo run build` to check the build after your changes
-
-## Work in progress
-
-We're using Github Projects to keep track of issues in progress and todo's. Here is our [Board](https://github.com/vercel/commerce/projects/1)
-
-People actively working on this project: @okbel, @lfades, @dominiksipowicz, @gbibeaul.
-
-## Troubleshoot
-
-<details>
-<summary>I already own a BigCommerce store. What should I do?</summary>
-<br>
-First thing you do is: <b>set your environment variables</b>
-<br>
-<br>
-.env.local
-
-```sh
-BIGCOMMERCE_STOREFRONT_API_URL=<>
-BIGCOMMERCE_STOREFRONT_API_TOKEN=<>
-BIGCOMMERCE_STORE_API_URL=<>
-BIGCOMMERCE_STORE_API_TOKEN=<>
-BIGCOMMERCE_STORE_API_CLIENT_ID=<>
-BIGCOMMERCE_CHANNEL_ID=<>
-```
-
-If your project was started with a "Deploy with Vercel" button, you can use Vercel's CLI to retrieve these credentials.
-
-1. Install Vercel CLI: `npm i -g vercel`
-2. Link local instance with Vercel and Github accounts (creates .vercel file): `vercel link`
-3. Download your environment variables: `vercel env pull .env.local`
-
-Next, you're free to customize the starter. More updates coming soon. Stay tuned..
-
-</details>
-
-<details>
-<summary>BigCommerce shows a Coming Soon page and requests a Preview Code</summary>
-<br>
-After Email confirmation, Checkout should be manually enabled through BigCommerce platform. Look for "Review & test your store" section through BigCommerce's dashboard.
-<br>
-<br>
-BigCommerce team has been notified and they plan to add more details about this subject.
-</details>
-
-<details>
-<summary>When run locally I get `Error: Cannot find module '...@vercel/commerce/dist/config'`</summary>
-
-```bash
-commerce/site
-❯ yarn dev
-yarn run v1.22.17
-$ next dev
-ready - started server on 0.0.0.0:3000, url: http://localhost:3000
-info  - Loaded env from /commerce/site/.env.local
-error - Failed to load next.config.js, see more info here https://nextjs.org/docs/messages/next-config-error
-Error: Cannot find module '/Users/dom/work/vercel/commerce/node_modules/@vercel/commerce/dist/config.cjs'
-    at createEsmNotFoundErr (node:internal/modules/cjs/loader:960:15)
-    at finalizeEsmResolution (node:internal/modules/cjs/loader:953:15)
-    at resolveExports (node:internal/modules/cjs/loader:482:14)
-    at Function.Module._findPath (node:internal/modules/cjs/loader:522:31)
-    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:919:27)
-    at Function.mod._resolveFilename (/Users/dom/work/vercel/commerce/node_modules/next/dist/build/webpack/require-hook.js:179:28)
-    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
-    at Module.require (node:internal/modules/cjs/loader:1005:19)
-    at require (node:internal/modules/cjs/helpers:102:18)
-    at Object.<anonymous> (/Users/dom/work/vercel/commerce/site/commerce-config.js:9:14) {
-  code: 'MODULE_NOT_FOUND',
-  path: '/Users/dom/work/vercel/commerce/node_modules/@vercel/commerce/package.json'
-}
-error Command failed with exit code 1.
-info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
-```
-
-The error usually occurs when running yarn dev inside of the `/site/` folder after installing a fresh repository.
-
-In order to fix this, run `yarn dev` in the monorepo root folder first.
-
-> Using `yarn dev` from the root is recommended for developing, which will run watch mode on all packages.
-
-</details>
+<img alt="Screenshot of updating your Preview URL" src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2F09ab3eadebe5453883f77e60c97a9eba">

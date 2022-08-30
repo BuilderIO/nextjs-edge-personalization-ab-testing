@@ -3,17 +3,24 @@ import type {
   GetStaticPropsContext,
   InferGetStaticPropsType,
 } from 'next'
-import { useRouter } from 'next/router'
 import commerce from '@lib/api/commerce'
 import { Layout } from '@components/common'
 import { ProductView } from '@components/product'
+import { parsePersonalizedURL } from '@builder.io/personalization-utils/dist/next'
+import { useIsPreviewing, BuilderComponent, builder } from '@builder.io/react'
+import builderConfig from '../../../config/builder'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
+import Cookies from 'js-cookie'
+
+builder.init(builderConfig.apiKey)
 
 export async function getStaticProps({
   params,
   locale,
   locales,
   preview,
-}: GetStaticPropsContext<{ slug: string }>) {
+}: GetStaticPropsContext<{ slug: string; hash?: string[] }>) {
   const config = { locale, locales }
   const pagesPromise = commerce.getAllPages({ config, preview })
   const siteInfoPromise = commerce.getSiteInfo({ config, preview })
@@ -33,6 +40,17 @@ export async function getStaticProps({
   const { product } = await productPromise
   const { products: relatedProducts } = await allProductsPromise
 
+  const { attributes } = parsePersonalizedURL(params?.hash || [])
+  const builderSection =
+    (await builder
+      .get('product-editorial', {
+        userAttributes: {
+          ...attributes,
+          product: params?.slug,
+        },
+      })
+      .promise()) || null
+
   if (!product) {
     throw new Error(`Product with slug '${params!.slug}' not found`)
   }
@@ -43,8 +61,9 @@ export async function getStaticProps({
       product,
       relatedProducts,
       categories,
+      builderSection,
     },
-    revalidate: 200,
+    revalidate: 1,
   }
 }
 
@@ -65,17 +84,36 @@ export async function getStaticPaths({ locales }: GetStaticPathsContext) {
   }
 }
 
-export default function Slug({
+export default function ProductPage({
   product,
   relatedProducts,
+  builderSection,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const router = useRouter()
+  const isPreviewingInBuilder = useIsPreviewing()
 
-  return router.isFallback ? (
+  useEffect(() => {
+    if (router.query.slug?.includes('jacket')) {
+      Cookies.set(
+        'personalization.audience',
+        JSON.stringify(['jacket-shopper'])
+      )
+    }
+    if (router.query.slug?.includes('shirt')) {
+      Cookies.set('personalization.audience', JSON.stringify(['shirt-shopper']))
+    }
+  })
+
+  return router.isFallback && !isPreviewingInBuilder ? (
     <h1>Loading...</h1>
   ) : (
-    <ProductView product={product} relatedProducts={relatedProducts} />
+    <>
+      <ProductView product={product} relatedProducts={relatedProducts} />
+      {(builderSection || isPreviewingInBuilder) && (
+        <BuilderComponent model="product-editorial" content={builderSection} />
+      )}
+    </>
   )
 }
 
-Slug.Layout = Layout
+ProductPage.Layout = Layout
