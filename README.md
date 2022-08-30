@@ -88,6 +88,7 @@ Learn more about
 - Developing with [Builder.io](https://www.builder.io/c/docs/developers)
 - Registering custom components with [Builder.io](https://www.builder.io/c/docs/custom-components-intro)
 - Learn more about [Next.js Middleware](https://nextjs.org/docs/advanced-features/middleware) and [Vercel Edge Functions](https://vercel.com/docs/concepts/functions/edge-functions)
+- Learn more about the [Next.js personalization](https://github.com/BuilderIO/builder/blob/main/packages/personalization-utils/README.md) utils used in this example
 
 ### Troubleshooting
 
