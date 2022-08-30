@@ -2,9 +2,14 @@
 
 You can use the Builder.io CLI to spin up your Builder space, fully configured, faster than from scratch.
 
-### Unzip the demo space files
+#### Clone repo and unzip the demo space files
 
-The file `builder-demo-space.zip` contains the space clone that we're going to use to initialize your new space in the following steps. Unzip this folder into a new folder called `builder`
+The file `builder-demo-space.zip` contains the space clone that we're going to use to initialize your new space in the following steps.
+```
+git clone git@github.com:BuilderIO/nextjs-edge-personalization-demo.git
+cd nextjs-edge-personalization-demo
+unzip builder-demo-space.zip
+```
 
 #### Get your Builder.io private key
 
