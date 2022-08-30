@@ -1,0 +1,69 @@
+{
+  "createdBy": "agZ9n5CUKRfbL9t6CaJOyVSK4Es2",
+  "createdDate": 1661814697735,
+  "data": {
+    "blocks": [
+      {
+        "@type": "@builder.io/sdk:Element",
+        "@version": 2,
+        "id": "builder-0f646ef31bb646e4b21e3c3e91c2e2c8",
+        "component": {
+          "name": "Hero",
+          "options": {
+            "headline": "Such a beautiful shirt",
+            "description": "You would look great in it"
+          }
+        },
+        "responsiveStyles": {
+          "large": {
+            "display": "flex",
+            "flexDirection": "column",
+            "position": "relative",
+            "flexShrink": "0",
+            "boxSizing": "border-box",
+            "marginTop": "20px"
+          }
+        }
+      }
+    ],
+    "state": {
+      "deviceSize": "large",
+      "location": {
+        "path": "",
+        "query": {}
+      }
+    }
+  },
+  "id": "9cf60f73697d448eb126b27ffc7d92df",
+  "lastUpdatedBy": "agZ9n5CUKRfbL9t6CaJOyVSK4Es2",
+  "meta": {
+    "componentsUsed": {
+      "Hero": 1
+    },
+    "hasLinks": false,
+    "kind": "component",
+    "lastPreviewUrl": "http://localhost:3000/product/new-short-sleeve-t-shirt?builder.space=1c3b72c36b194b318c40d99ec0a3bf75&builder.cachebust=true&builder.preview=product-editorial&builder.noCache=true&__builder_editing__=true&builder.overrides.product-editorial=cd052965c906476daa624c1e118ea72a&builder.overrides.cd052965c906476daa624c1e118ea72a=cd052965c906476daa624c1e118ea72a",
+    "needsHydration": false
+  },
+  "modelId": "ca341819ad8d4f6da461a81fef8b0011",
+  "name": "T shift editorial",
+  "published": "published",
+  "query": [
+    {
+      "@type": "@builder.io/core:Query",
+      "operator": "is",
+      "property": "product",
+      "value": [
+        "new-short-sleeve-t-shirt"
+      ]
+    }
+  ],
+  "testRatio": 1,
+  "variations": {},
+  "lastUpdated": 1661816228090,
+  "firstPublished": 1661816228089,
+  "rev": "zdnrjc6lufm",
+  "@originOrg": "1c3b72c36b194b318c40d99ec0a3bf75",
+  "@originContentId": "cd052965c906476daa624c1e118ea72a",
+  "@originModelId": "3037452bfc654b58b9384c3dda753fd5"
+}

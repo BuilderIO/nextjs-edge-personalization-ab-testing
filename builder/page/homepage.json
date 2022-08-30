@@ -1,0 +1,67 @@
+{
+  "createdBy": "agZ9n5CUKRfbL9t6CaJOyVSK4Es2",
+  "createdDate": 1661791778107,
+  "data": {
+    "themeId": false,
+    "title": "Homepage",
+    "blocks": [
+      {
+        "@type": "@builder.io/sdk:Element",
+        "@version": 2,
+        "id": "builder-ed4b602cc70d4b3ab1f84816e50a7cf3",
+        "component": {
+          "name": "Hero",
+          "options": {
+            "headline": "Welcome Newcomer",
+            "description": "Take a look around!"
+          }
+        },
+        "responsiveStyles": {
+          "large": {
+            "display": "flex",
+            "flexDirection": "column",
+            "position": "relative",
+            "flexShrink": "0",
+            "boxSizing": "border-box",
+            "marginTop": "20px"
+          }
+        }
+      }
+    ],
+    "url": "/",
+    "state": {
+      "deviceSize": "large",
+      "location": {
+        "path": "",
+        "query": {}
+      }
+    }
+  },
+  "id": "bed2e4a9340a4bfda655c030dc2a9891",
+  "lastUpdatedBy": "agZ9n5CUKRfbL9t6CaJOyVSK4Es2",
+  "meta": {
+    "hasLinks": false,
+    "kind": "page",
+    "lastPreviewUrl": "http://localhost:3000/?builder.space=1c3b72c36b194b318c40d99ec0a3bf75&builder.cachebust=true&builder.preview=page&builder.noCache=true&__builder_editing__=true&builder.overrides.page=96829ae6670746c8a9a1cc05f037ea0f&builder.overrides.96829ae6670746c8a9a1cc05f037ea0f=96829ae6670746c8a9a1cc05f037ea0f&builder.overrides.page:/=96829ae6670746c8a9a1cc05f037ea0f",
+    "needsHydration": false
+  },
+  "modelId": "3b45c7ad965b4b408ed688e9efc71076",
+  "name": "Homepage",
+  "published": "published",
+  "query": [
+    {
+      "@type": "@builder.io/core:Query",
+      "operator": "is",
+      "property": "urlPath",
+      "value": "/"
+    }
+  ],
+  "testRatio": 1,
+  "variations": {},
+  "lastUpdated": 1661813356217,
+  "firstPublished": 1661813356215,
+  "rev": "vgt15p8pyvs",
+  "@originOrg": "1c3b72c36b194b318c40d99ec0a3bf75",
+  "@originContentId": "96829ae6670746c8a9a1cc05f037ea0f",
+  "@originModelId": "0a0f3122d3364ad598947496faaba70b"
+}

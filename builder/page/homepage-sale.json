@@ -1,0 +1,585 @@
+{
+  "createdBy": "agZ9n5CUKRfbL9t6CaJOyVSK4Es2",
+  "createdDate": 1661874807750,
+  "data": {
+    "themeId": false,
+    "title": "Homepage",
+    "blocks": [
+      {
+        "@type": "@builder.io/sdk:Element",
+        "@version": 2,
+        "id": "builder-d64f5b770ef64ce9a74b33e7aa8d2b13",
+        "meta": {
+          "previousId": "builder-ed4b602cc70d4b3ab1f84816e50a7cf3"
+        },
+        "component": {
+          "name": "Hero",
+          "options": {
+            "headline": "Don't miss this sale",
+            "description": "It only lasts a short time"
+          }
+        },
+        "responsiveStyles": {
+          "large": {
+            "display": "flex",
+            "flexDirection": "column",
+            "position": "relative",
+            "flexShrink": "0",
+            "boxSizing": "border-box",
+            "marginTop": "20px"
+          }
+        }
+      },
+      {
+        "@type": "@builder.io/sdk:Element",
+        "@version": 2,
+        "id": "builder-dc65a81896764850b0ea94b22038bfa0",
+        "component": {
+          "name": "Container",
+          "options": {}
+        },
+        "children": [
+          {
+            "@type": "@builder.io/sdk:Element",
+            "@version": 2,
+            "id": "builder-c110f1166e6043eea28851606c4282dd",
+            "component": {
+              "name": "Collapse",
+              "options": {
+                "title": "Shop on sale jackets"
+              }
+            },
+            "children": [
+              {
+                "@type": "@builder.io/sdk:Element",
+                "@version": 2,
+                "id": "builder-c4cb51a679fc45fc8b55f991b96158c8",
+                "component": {
+                  "name": "Product Cell",
+                  "options": {
+                    "slug": "lightweight-jacket",
+                    "variant": "slim"
+                  }
+                },
+                "responsiveStyles": {
+                  "large": {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "position": "relative",
+                    "flexShrink": "0",
+                    "boxSizing": "border-box",
+                    "marginTop": "20px"
+                  }
+                }
+              }
+            ],
+            "responsiveStyles": {
+              "large": {
+                "display": "flex",
+                "flexDirection": "column",
+                "position": "relative",
+                "flexShrink": "0",
+                "boxSizing": "border-box",
+                "marginTop": "20px"
+              }
+            }
+          },
+          {
+            "@type": "@builder.io/sdk:Element",
+            "@version": 2,
+            "id": "builder-4165c2314bbf4572b5fc5071f80a97cf",
+            "meta": {
+              "previousId": "builder-eaa5c632822a41f88475ddecd87248f4"
+            },
+            "component": {
+              "name": "Columns",
+              "options": {
+                "columns": [
+                  {
+                    "blocks": [
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-660f34b1e4be457581a20058f5f4baef",
+                        "component": {
+                          "name": "Image",
+                          "options": {
+                            "image": "https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3412d878786c41589abbc4b23b04167c?width=540",
+                            "backgroundPosition": "center",
+                            "backgroundSize": "cover",
+                            "aspectRatio": 1.0235,
+                            "lazy": false,
+                            "sizes": "(max-width: 638px) 85vw, (max-width: 998px) 28vw, 26vw",
+                            "srcset": "https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3412d878786c41589abbc4b23b04167c?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3412d878786c41589abbc4b23b04167c?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3412d878786c41589abbc4b23b04167c?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3412d878786c41589abbc4b23b04167c?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3412d878786c41589abbc4b23b04167c?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3412d878786c41589abbc4b23b04167c?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3412d878786c41589abbc4b23b04167c?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3412d878786c41589abbc4b23b04167c?width=540 540w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3412d878786c41589abbc4b23b04167c?width=270 270w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3412d878786c41589abbc4b23b04167c?width=364 364w"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "stretch",
+                            "flexShrink": "0",
+                            "position": "relative",
+                            "textAlign": "center",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "minHeight": "20px",
+                            "minWidth": "20px",
+                            "overflow": "hidden"
+                          }
+                        }
+                      },
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-5109efe94328410e9f439a2c30fd1390",
+                        "component": {
+                          "name": "Text",
+                          "options": {
+                            "text": "<p>Gifts</p>"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "stretch",
+                            "flexShrink": "0",
+                            "position": "relative",
+                            "marginTop": "10px",
+                            "textAlign": "center",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "fontSize": "22px",
+                            "fontWeight": "300"
+                          }
+                        }
+                      },
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-a73308d78efe489a8b7312fc6aef34b2",
+                        "component": {
+                          "name": "Text",
+                          "options": {
+                            "text": "<p>Lorem ipsum dolor sit amet</p>"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "stretch",
+                            "flexShrink": "0",
+                            "position": "relative",
+                            "marginTop": "10px",
+                            "textAlign": "center",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "fontSize": "16px",
+                            "fontWeight": "300"
+                          }
+                        }
+                      },
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-7620cd6eb9154036b134fca6d48f1ae2",
+                        "component": {
+                          "name": "Text",
+                          "options": {
+                            "text": "<p><a href=\"Shop\" rel=\"noopener noreferrer\">Shop</a></p>"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "stretch",
+                            "flexShrink": "0",
+                            "position": "relative",
+                            "marginTop": "10px",
+                            "textAlign": "center",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "fontSize": "16px",
+                            "fontWeight": "300"
+                          },
+                          "medium": {
+                            "marginBottom": "20px"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "blocks": [
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-5d775572c1184c52a44ecc1e4c4cf912",
+                        "component": {
+                          "name": "Image",
+                          "options": {
+                            "image": "https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F86b0e29104bc413596ea137692dec859?width=540",
+                            "backgroundPosition": "right",
+                            "backgroundSize": "cover",
+                            "aspectRatio": 1.0235,
+                            "lazy": false,
+                            "sizes": "(max-width: 638px) 85vw, (max-width: 998px) 28vw, 26vw",
+                            "srcset": "https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F86b0e29104bc413596ea137692dec859?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F86b0e29104bc413596ea137692dec859?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F86b0e29104bc413596ea137692dec859?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F86b0e29104bc413596ea137692dec859?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F86b0e29104bc413596ea137692dec859?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F86b0e29104bc413596ea137692dec859?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F86b0e29104bc413596ea137692dec859?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F86b0e29104bc413596ea137692dec859?width=540 540w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F86b0e29104bc413596ea137692dec859?width=270 270w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F86b0e29104bc413596ea137692dec859?width=364 364w"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "stretch",
+                            "flexShrink": "0",
+                            "position": "relative",
+                            "textAlign": "center",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "minHeight": "20px",
+                            "minWidth": "20px",
+                            "overflow": "hidden"
+                          }
+                        }
+                      },
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-e4ef0eb909044ece8b45d30de09ffea6",
+                        "component": {
+                          "name": "Text",
+                          "options": {
+                            "text": "<p>Gifts</p>"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "stretch",
+                            "flexShrink": "0",
+                            "position": "relative",
+                            "marginTop": "10px",
+                            "textAlign": "center",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "fontSize": "22px",
+                            "fontWeight": "300"
+                          }
+                        }
+                      },
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-8155c2ce03c44832a8f73bf0b94bfa1e",
+                        "component": {
+                          "name": "Text",
+                          "options": {
+                            "text": "<p>Lorem ipsum dolor sit amet</p>"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "stretch",
+                            "flexShrink": "0",
+                            "position": "relative",
+                            "marginTop": "10px",
+                            "textAlign": "center",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "fontSize": "16px",
+                            "fontWeight": "300"
+                          }
+                        }
+                      },
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-1d09888223aa46cf904ae6326e5c5168",
+                        "component": {
+                          "name": "Text",
+                          "options": {
+                            "text": "<p><a href=\"Shop\" rel=\"noopener noreferrer\">Shop</a></p>"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "stretch",
+                            "flexShrink": "0",
+                            "position": "relative",
+                            "marginTop": "10px",
+                            "textAlign": "center",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "fontSize": "16px",
+                            "fontWeight": "300"
+                          },
+                          "medium": {
+                            "marginBottom": "20px"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "blocks": [
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-ae501d86a999424ab90796a1598c2175",
+                        "component": {
+                          "name": "Image",
+                          "options": {
+                            "image": "https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3ac5369da6924e61a72dd54a3a7b27f9?width=540",
+                            "backgroundPosition": "center",
+                            "backgroundSize": "cover",
+                            "aspectRatio": 1.0235,
+                            "lazy": false,
+                            "sizes": "(max-width: 638px) 85vw, (max-width: 998px) 28vw, 26vw",
+                            "srcset": "https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3ac5369da6924e61a72dd54a3a7b27f9?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3ac5369da6924e61a72dd54a3a7b27f9?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3ac5369da6924e61a72dd54a3a7b27f9?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3ac5369da6924e61a72dd54a3a7b27f9?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3ac5369da6924e61a72dd54a3a7b27f9?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3ac5369da6924e61a72dd54a3a7b27f9?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3ac5369da6924e61a72dd54a3a7b27f9?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3ac5369da6924e61a72dd54a3a7b27f9?width=540 540w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3ac5369da6924e61a72dd54a3a7b27f9?width=270 270w, https://cdn.builder.io/api/v1/image/assets%2F89d6bbb44070475d9580fd22f21ef8f1%2F3ac5369da6924e61a72dd54a3a7b27f9?width=364 364w"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "stretch",
+                            "flexShrink": "0",
+                            "position": "relative",
+                            "textAlign": "center",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "minHeight": "20px",
+                            "minWidth": "20px",
+                            "overflow": "hidden"
+                          }
+                        }
+                      },
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-05e7e9b128b14d7ca75db7b5a647e0bb",
+                        "component": {
+                          "name": "Text",
+                          "options": {
+                            "text": "<p>Gifts</p>"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "stretch",
+                            "flexShrink": "0",
+                            "position": "relative",
+                            "marginTop": "10px",
+                            "textAlign": "center",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "fontSize": "22px",
+                            "fontWeight": "300"
+                          }
+                        }
+                      },
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-63d39b7ec1374e18bb6aa23ef6666f6b",
+                        "component": {
+                          "name": "Text",
+                          "options": {
+                            "text": "<p>Lorem ipsum dolor sit amet</p>"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "stretch",
+                            "flexShrink": "0",
+                            "position": "relative",
+                            "marginTop": "10px",
+                            "textAlign": "center",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "fontSize": "16px",
+                            "fontWeight": "300"
+                          }
+                        }
+                      },
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-d24fd54d5ac34a20a28ef16d5d166660",
+                        "component": {
+                          "name": "Text",
+                          "options": {
+                            "text": "<p><a href=\"Shop\" rel=\"noopener noreferrer\">Shop</a></p>"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "stretch",
+                            "flexShrink": "0",
+                            "position": "relative",
+                            "marginTop": "10px",
+                            "textAlign": "center",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "fontSize": "16px",
+                            "fontWeight": "300"
+                          },
+                          "medium": {
+                            "marginBottom": "20px"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "space": 20,
+                "stackColumnsAt": "tablet"
+              }
+            },
+            "responsiveStyles": {
+              "large": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "stretch",
+                "position": "relative",
+                "flexShrink": "0",
+                "boxSizing": "border-box",
+                "marginTop": "20px",
+                "width": "auto",
+                "paddingLeft": "50px",
+                "paddingRight": "50px",
+                "alignSelf": "stretch"
+              },
+              "small": {
+                "paddingLeft": "30px",
+                "paddingRight": "20px"
+              }
+            }
+          },
+          {
+            "@type": "@builder.io/sdk:Element",
+            "@version": 2,
+            "id": "builder-ffbbe514b227497faa15c157afd17e59",
+            "meta": {
+              "previousId": "builder-c110f1166e6043eea28851606c4282dd"
+            },
+            "component": {
+              "name": "Collapse",
+              "options": {
+                "title": "Shop on sale shirts"
+              }
+            },
+            "children": [
+              {
+                "@type": "@builder.io/sdk:Element",
+                "@version": 2,
+                "id": "builder-d0576fdd3d0f42ee97953692454e72c5",
+                "meta": {
+                  "previousId": "builder-c4cb51a679fc45fc8b55f991b96158c8"
+                },
+                "component": {
+                  "name": "Product Cell",
+                  "options": {
+                    "slug": "new-short-sleeve-t-shirt",
+                    "variant": "slim"
+                  }
+                },
+                "responsiveStyles": {
+                  "large": {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "position": "relative",
+                    "flexShrink": "0",
+                    "boxSizing": "border-box",
+                    "marginTop": "20px"
+                  }
+                }
+              }
+            ],
+            "responsiveStyles": {
+              "large": {
+                "display": "flex",
+                "flexDirection": "column",
+                "position": "relative",
+                "flexShrink": "0",
+                "boxSizing": "border-box",
+                "marginTop": "20px"
+              }
+            }
+          }
+        ],
+        "responsiveStyles": {
+          "large": {
+            "display": "flex",
+            "flexDirection": "column",
+            "position": "relative",
+            "flexShrink": "0",
+            "boxSizing": "border-box",
+            "marginTop": "20px",
+            "minHeight": "100px"
+          }
+        }
+      }
+    ],
+    "url": "/",
+    "state": {
+      "deviceSize": "large",
+      "location": {
+        "path": "",
+        "query": {}
+      }
+    }
+  },
+  "firstPublished": 1661813356215,
+  "id": "6f4b99c76dbe48c9861d88b66a1e0d89",
+  "lastUpdated": 1661880944456,
+  "lastUpdatedBy": "agZ9n5CUKRfbL9t6CaJOyVSK4Es2",
+  "meta": {
+    "componentsUsed": {
+      "Collapse": 2,
+      "Container": 1,
+      "Hero": 1,
+      "Product Cell": 2
+    },
+    "hasLinks": false,
+    "kind": "page",
+    "lastPreviewUrl": "https://nextjs-edge-personalization-demo.vercel.app/?builder.space=1c3b72c36b194b318c40d99ec0a3bf75&builder.cachebust=true&builder.preview=page&builder.noCache=true&__builder_editing__=true&builder.overrides.page=5639a045d8704fe49e2483190d54840d&builder.overrides.5639a045d8704fe49e2483190d54840d=5639a045d8704fe49e2483190d54840d&builder.overrides.page:/=5639a045d8704fe49e2483190d54840d",
+    "originalContentId": "bed2e4a9340a4bfda655c030dc2a9891",
+    "winningTest": null,
+    "needsHydration": false
+  },
+  "modelId": "3b45c7ad965b4b408ed688e9efc71076",
+  "name": "Homepage Sale",
+  "published": "published",
+  "query": [
+    {
+      "@type": "@builder.io/core:Query",
+      "operator": "is",
+      "property": "urlPath",
+      "value": "/"
+    }
+  ],
+  "testRatio": 1,
+  "variations": {},
+  "startDate": 1662220431000,
+  "endDate": 1662274800000,
+  "rev": "vgt15p8pyvs",
+  "@originOrg": "1c3b72c36b194b318c40d99ec0a3bf75",
+  "@originContentId": "5639a045d8704fe49e2483190d54840d",
+  "@originModelId": "0a0f3122d3364ad598947496faaba70b"
+}

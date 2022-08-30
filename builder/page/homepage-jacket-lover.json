@@ -1,0 +1,484 @@
+{
+  "createdBy": "agZ9n5CUKRfbL9t6CaJOyVSK4Es2",
+  "createdDate": 1661877656151,
+  "data": {
+    "themeId": false,
+    "title": "Homepage",
+    "blocks": [
+      {
+        "@type": "@builder.io/sdk:Element",
+        "@version": 2,
+        "id": "builder-69464a99f382452182e978f10e13f77a",
+        "meta": {
+          "previousId": "builder-bf8e8d34d72b4b6f845bc65366cd118c"
+        },
+        "component": {
+          "name": "Hero",
+          "options": {
+            "headline": "Hey there jacket lover",
+            "description": "We've got some new warm and cosy stuff for you"
+          }
+        },
+        "responsiveStyles": {
+          "large": {
+            "display": "flex",
+            "flexDirection": "column",
+            "position": "relative",
+            "flexShrink": "0",
+            "boxSizing": "border-box",
+            "marginTop": "20px"
+          }
+        }
+      },
+      {
+        "@type": "@builder.io/sdk:Element",
+        "@version": 2,
+        "id": "builder-9c2ae6a13d6a43e389a035c80d7005ee",
+        "meta": {
+          "previousId": "builder-845b658ccc2d4106b76c02b7ce9baa57"
+        },
+        "component": {
+          "name": "Columns",
+          "options": {
+            "space": 30,
+            "columns": [
+              {
+                "blocks": [
+                  {
+                    "@type": "@builder.io/sdk:Element",
+                    "@version": 2,
+                    "id": "builder-907d32c464234f8c815df362af65001c",
+                    "component": {
+                      "name": "Container",
+                      "options": {}
+                    },
+                    "children": [
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-0a13d8f7b9044574bbd65878ecf2583b",
+                        "meta": {
+                          "previousId": "builder-aa61a3c37f1644828e51b75e6eeba176"
+                        },
+                        "component": {
+                          "name": "Text",
+                          "options": {
+                            "text": "<p>You might like this... jacket!</p>"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "position": "relative",
+                            "flexShrink": "0",
+                            "boxSizing": "border-box",
+                            "marginTop": "20px",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "textAlign": "center",
+                            "fontSize": "41px"
+                          }
+                        }
+                      },
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-26f20c1c7f9e43649a447bb29202cc4d",
+                        "meta": {
+                          "previousId": "builder-98bcdd27774a4e1b8af3ab7fb3458bc7"
+                        },
+                        "component": {
+                          "name": "Product Cell",
+                          "options": {
+                            "slug": "lightweight-jacket",
+                            "variant": "default"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "position": "relative",
+                            "flexShrink": "0",
+                            "boxSizing": "border-box",
+                            "marginTop": "70px",
+                            "maxWidth": "400px"
+                          }
+                        }
+                      }
+                    ],
+                    "responsiveStyles": {
+                      "large": {
+                        "display": "flex",
+                        "flexDirection": "column",
+                        "position": "relative",
+                        "flexShrink": "0",
+                        "boxSizing": "border-box",
+                        "marginTop": "20px",
+                        "minHeight": "100px"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "blocks": [
+                  {
+                    "@type": "@builder.io/sdk:Element",
+                    "@version": 2,
+                    "id": "builder-25fd440c0a5b40fe92504c0faed2e718",
+                    "meta": {
+                      "previousId": "builder-6e4276391bc84bbcb77b0aa990e90e8a"
+                    },
+                    "component": {
+                      "name": "Container",
+                      "options": {}
+                    },
+                    "children": [
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-7feb5be81084426283cdab74aa1804c7",
+                        "meta": {
+                          "previousId": "builder-ea14cf349eaa42b2b4b34f119d635715"
+                        },
+                        "component": {
+                          "name": "Text",
+                          "options": {
+                            "text": "<p>Pair a nice shirt with this jacket</p>"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "position": "relative",
+                            "flexShrink": "0",
+                            "boxSizing": "border-box",
+                            "marginTop": "20px",
+                            "lineHeight": "normal",
+                            "height": "auto",
+                            "textAlign": "center",
+                            "fontSize": "41px"
+                          }
+                        }
+                      },
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-ff38aeabfb7f46c7b736e39ba3431397",
+                        "meta": {
+                          "previousId": "builder-139420ca0723486caa434377cf5a8051"
+                        },
+                        "component": {
+                          "name": "Product Cell",
+                          "options": {
+                            "slug": "new-short-sleeve-t-shirt",
+                            "variant": "default"
+                          }
+                        },
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "position": "relative",
+                            "flexShrink": "0",
+                            "boxSizing": "border-box",
+                            "marginTop": "70px",
+                            "maxWidth": "400px"
+                          }
+                        }
+                      }
+                    ],
+                    "responsiveStyles": {
+                      "large": {
+                        "display": "flex",
+                        "flexDirection": "column",
+                        "position": "relative",
+                        "flexShrink": "0",
+                        "boxSizing": "border-box",
+                        "marginTop": "20px",
+                        "minHeight": "100px"
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "stackColumnsAt": "tablet"
+          }
+        }
+      }
+    ],
+    "url": "/",
+    "state": {
+      "deviceSize": "large",
+      "location": {
+        "path": "",
+        "query": {}
+      }
+    }
+  },
+  "firstPublished": 1661813356215,
+  "id": "e0f50a4210d14297a2718632ee33988c",
+  "lastUpdated": 1661877701156,
+  "lastUpdatedBy": "agZ9n5CUKRfbL9t6CaJOyVSK4Es2",
+  "meta": {
+    "componentsUsed": {
+      "Container": 4,
+      "Hero": 2,
+      "Product Cell": 4
+    },
+    "hasLinks": false,
+    "kind": "page",
+    "lastPreviewUrl": "https://nextjs-edge-personalization-demo.vercel.app/?builder.space=1c3b72c36b194b318c40d99ec0a3bf75&builder.cachebust=true&builder.preview=page&builder.noCache=true&__builder_editing__=true&builder.overrides.page=edd5347d2b2043eb82743e2fc08bfbe2&builder.overrides.edd5347d2b2043eb82743e2fc08bfbe2=edd5347d2b2043eb82743e2fc08bfbe2&builder.overrides.page:/=edd5347d2b2043eb82743e2fc08bfbe2",
+    "originalContentId": "f08ac91a64fc453692546a06d6680973",
+    "winningTest": null,
+    "needsHydration": false
+  },
+  "modelId": "3b45c7ad965b4b408ed688e9efc71076",
+  "name": "Homepage: Jacket lover",
+  "published": "published",
+  "query": [
+    {
+      "@type": "@builder.io/core:Query",
+      "operator": "is",
+      "property": "urlPath",
+      "value": "/"
+    },
+    {
+      "@type": "@builder.io/core:Query",
+      "operator": "is",
+      "property": "audience",
+      "value": [
+        "jacket-shopper"
+      ]
+    }
+  ],
+  "testRatio": 0.5,
+  "variations": {
+    "d786e15c65e84876961b06937661f6d1": {
+      "createdDate": 1661877682741,
+      "data": {
+        "themeId": false,
+        "title": "Homepage",
+        "blocks": [
+          {
+            "@type": "@builder.io/sdk:Element",
+            "@version": 2,
+            "id": "builder-44113622ef7c4f5faa1827968c29a88c",
+            "meta": {
+              "previousId": "builder-69464a99f382452182e978f10e13f77a"
+            },
+            "component": {
+              "name": "Hero",
+              "options": {
+                "headline": "Hey there jacket lover",
+                "description": "We've got some new warm and cosy stuff for you"
+              }
+            },
+            "responsiveStyles": {
+              "large": {
+                "display": "flex",
+                "flexDirection": "column",
+                "position": "relative",
+                "flexShrink": "0",
+                "boxSizing": "border-box",
+                "marginTop": "20px"
+              }
+            }
+          },
+          {
+            "@type": "@builder.io/sdk:Element",
+            "@version": 2,
+            "id": "builder-48c1116266b9481dbac43947b2e5a3a0",
+            "meta": {
+              "previousId": "builder-9c2ae6a13d6a43e389a035c80d7005ee"
+            },
+            "component": {
+              "name": "Columns",
+              "options": {
+                "space": 30,
+                "columns": [
+                  {
+                    "blocks": [
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-98edd6cf0ffb48a283e857476a3f6f90",
+                        "component": {
+                          "name": "Container",
+                          "options": {}
+                        },
+                        "children": [
+                          {
+                            "@type": "@builder.io/sdk:Element",
+                            "@version": 2,
+                            "id": "builder-599aa3e2aa24495a86cb4ec01649ca30",
+                            "meta": {
+                              "previousId": "builder-aa61a3c37f1644828e51b75e6eeba176"
+                            },
+                            "component": {
+                              "name": "Text",
+                              "options": {
+                                "text": "<p>You might like this... jacket!</p>"
+                              }
+                            },
+                            "responsiveStyles": {
+                              "large": {
+                                "display": "flex",
+                                "flexDirection": "column",
+                                "position": "relative",
+                                "flexShrink": "0",
+                                "boxSizing": "border-box",
+                                "marginTop": "20px",
+                                "lineHeight": "normal",
+                                "height": "auto",
+                                "textAlign": "center",
+                                "fontSize": "41px"
+                              }
+                            }
+                          },
+                          {
+                            "@type": "@builder.io/sdk:Element",
+                            "@version": 2,
+                            "id": "builder-2568e2a51a2945e8ba67cef5611b00a8",
+                            "meta": {
+                              "previousId": "builder-98bcdd27774a4e1b8af3ab7fb3458bc7"
+                            },
+                            "component": {
+                              "name": "Product Cell",
+                              "options": {
+                                "slug": "lightweight-jacket",
+                                "variant": "slim"
+                              }
+                            },
+                            "responsiveStyles": {
+                              "large": {
+                                "display": "flex",
+                                "flexDirection": "column",
+                                "position": "relative",
+                                "flexShrink": "0",
+                                "boxSizing": "border-box",
+                                "marginTop": "70px",
+                                "maxWidth": "400px"
+                              }
+                            }
+                          }
+                        ],
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "position": "relative",
+                            "flexShrink": "0",
+                            "boxSizing": "border-box",
+                            "marginTop": "20px",
+                            "minHeight": "100px"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "blocks": [
+                      {
+                        "@type": "@builder.io/sdk:Element",
+                        "@version": 2,
+                        "id": "builder-b8cdbac1e16842abbc057b74e186f47a",
+                        "meta": {
+                          "previousId": "builder-6e4276391bc84bbcb77b0aa990e90e8a"
+                        },
+                        "component": {
+                          "name": "Container",
+                          "options": {}
+                        },
+                        "children": [
+                          {
+                            "@type": "@builder.io/sdk:Element",
+                            "@version": 2,
+                            "id": "builder-3e63b35bb2ca471b98ce3014f17e35a1",
+                            "meta": {
+                              "previousId": "builder-ea14cf349eaa42b2b4b34f119d635715"
+                            },
+                            "component": {
+                              "name": "Text",
+                              "options": {
+                                "text": "<p>Pair a nice shirt with this jacket</p>"
+                              }
+                            },
+                            "responsiveStyles": {
+                              "large": {
+                                "display": "flex",
+                                "flexDirection": "column",
+                                "position": "relative",
+                                "flexShrink": "0",
+                                "boxSizing": "border-box",
+                                "marginTop": "20px",
+                                "lineHeight": "normal",
+                                "height": "auto",
+                                "textAlign": "center",
+                                "fontSize": "41px"
+                              }
+                            }
+                          },
+                          {
+                            "@type": "@builder.io/sdk:Element",
+                            "@version": 2,
+                            "id": "builder-80f32206595b4dda967141f0ffc20035",
+                            "meta": {
+                              "previousId": "builder-139420ca0723486caa434377cf5a8051"
+                            },
+                            "component": {
+                              "name": "Product Cell",
+                              "options": {
+                                "slug": "new-short-sleeve-t-shirt",
+                                "variant": "slim"
+                              }
+                            },
+                            "responsiveStyles": {
+                              "large": {
+                                "display": "flex",
+                                "flexDirection": "column",
+                                "position": "relative",
+                                "flexShrink": "0",
+                                "boxSizing": "border-box",
+                                "marginTop": "70px",
+                                "maxWidth": "400px"
+                              }
+                            }
+                          }
+                        ],
+                        "responsiveStyles": {
+                          "large": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "position": "relative",
+                            "flexShrink": "0",
+                            "boxSizing": "border-box",
+                            "marginTop": "20px",
+                            "minHeight": "100px"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "stackColumnsAt": "tablet"
+              }
+            }
+          }
+        ]
+      },
+      "id": "d786e15c65e84876961b06937661f6d1",
+      "meta": {},
+      "name": "",
+      "testRatio": 0.5
+    }
+  },
+  "rev": "vgt15p8pyvs",
+  "@originOrg": "1c3b72c36b194b318c40d99ec0a3bf75",
+  "@originContentId": "edd5347d2b2043eb82743e2fc08bfbe2",
+  "@originModelId": "0a0f3122d3364ad598947496faaba70b"
+}

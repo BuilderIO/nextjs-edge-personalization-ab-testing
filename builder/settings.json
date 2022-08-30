@@ -1,0 +1,56 @@
+{
+  "customTargetingAttributes": {
+    "returnVisitor": {
+      "type": "boolean"
+    },
+    "product": {
+      "type": "string",
+      "enum": [
+        "new-short-sleeve-t-shirt",
+        "lightweight-jacket"
+      ]
+    },
+    "audience": {
+      "type": "string",
+      "enum": [
+        "shirt-shopper",
+        "jacket-shopper"
+      ]
+    }
+  },
+  "settings": {
+    "showSitePreviewTab": true,
+    "showTemplatesOnPageCreate": false,
+    "customComponents": [
+      "CodeBlock",
+      "Hero",
+      "Searchbar",
+      "Collapse",
+      "Container",
+      "Product Cell"
+    ]
+  },
+  "type": "space",
+  "siteUrl": "https://nextjs-edge-personalization-demo.vercel.app/",
+  "name": "Vercel Personalization",
+  "loadPlugins": [],
+  "id": "1c3b72c36b194b318c40d99ec0a3bf75",
+  "@version": 6,
+  "cloneInfo": {
+    "contentIdMap": {
+      "cd052965c906476daa624c1e118ea72a": "9cf60f73697d448eb126b27ffc7d92df",
+      "3723234e2d60474ba6ed955a2f31eadb": "2e5e8b813c53487bb1ee8d62b87460b9",
+      "2da1a9e6a5964080919c71f842f28f96": "f45072cc3fe94443ad51727e963d8776",
+      "3994d6e5a6994986bb68079b1296baaa": "14feaffbccfc4656a05f7c43bc7372d2",
+      "edd5347d2b2043eb82743e2fc08bfbe2": "e0f50a4210d14297a2718632ee33988c",
+      "5639a045d8704fe49e2483190d54840d": "6f4b99c76dbe48c9861d88b66a1e0d89",
+      "e2d31d2de1264115bc1316ef8dfe4ee0": "5ebabeb4184f48f9a74c46b43d3711f5",
+      "a8eccb3e9b944e46ba75453177150a9a": "bbe59310e18d45869c2f69a3793891e4",
+      "96829ae6670746c8a9a1cc05f037ea0f": "bed2e4a9340a4bfda655c030dc2a9891"
+    },
+    "modelIdMap": {
+      "3037452bfc654b58b9384c3dda753fd5": "ca341819ad8d4f6da461a81fef8b0011",
+      "0a0f3122d3364ad598947496faaba70b": "3b45c7ad965b4b408ed688e9efc71076"
+    }
+  }
+}

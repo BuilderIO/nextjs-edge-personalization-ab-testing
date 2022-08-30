@@ -1,0 +1,101 @@
+{
+  "createdBy": "agZ9n5CUKRfbL9t6CaJOyVSK4Es2",
+  "createdDate": 1661884787685,
+  "data": {
+    "themeId": false,
+    "title": "Shirt Homepage",
+    "blocks": [
+      {
+        "@type": "@builder.io/sdk:Element",
+        "@version": 2,
+        "id": "builder-aedec5fdce8d48dfbeba6e497f0a25ab",
+        "component": {
+          "name": "Hero",
+          "options": {
+            "headline": "Hey shirt lover!",
+            "description": "I am the description"
+          }
+        },
+        "responsiveStyles": {
+          "large": {
+            "display": "flex",
+            "flexDirection": "column",
+            "position": "relative",
+            "flexShrink": "0",
+            "boxSizing": "border-box",
+            "marginTop": "20px"
+          }
+        }
+      },
+      {
+        "@type": "@builder.io/sdk:Element",
+        "@version": 2,
+        "id": "builder-c5c7d666c4bc46028deee518148a1756",
+        "component": {
+          "name": "Product Cell",
+          "options": {
+            "slug": "new-short-sleeve-t-shirt",
+            "variant": "slim"
+          }
+        },
+        "responsiveStyles": {
+          "large": {
+            "display": "flex",
+            "flexDirection": "column",
+            "position": "relative",
+            "flexShrink": "0",
+            "boxSizing": "border-box",
+            "marginTop": "20px"
+          }
+        }
+      }
+    ],
+    "url": "/",
+    "state": {
+      "deviceSize": "large",
+      "location": {
+        "path": "",
+        "query": {}
+      }
+    }
+  },
+  "id": "2e5e8b813c53487bb1ee8d62b87460b9",
+  "lastUpdatedBy": "agZ9n5CUKRfbL9t6CaJOyVSK4Es2",
+  "meta": {
+    "componentsUsed": {
+      "Hero": 1,
+      "Product Cell": 1
+    },
+    "hasLinks": false,
+    "kind": "page",
+    "lastPreviewUrl": "https://nextjs-edge-personalization-demo.vercel.app/?builder.space=1c3b72c36b194b318c40d99ec0a3bf75&builder.cachebust=true&builder.preview=page&builder.noCache=true&__builder_editing__=true&builder.overrides.page=3723234e2d60474ba6ed955a2f31eadb&builder.overrides.3723234e2d60474ba6ed955a2f31eadb=3723234e2d60474ba6ed955a2f31eadb&builder.overrides.page:/=3723234e2d60474ba6ed955a2f31eadb",
+    "needsHydration": false
+  },
+  "modelId": "3b45c7ad965b4b408ed688e9efc71076",
+  "name": "Shirt Homepage",
+  "published": "published",
+  "query": [
+    {
+      "@type": "@builder.io/core:Query",
+      "operator": "is",
+      "property": "urlPath",
+      "value": "/"
+    },
+    {
+      "@type": "@builder.io/core:Query",
+      "operator": "is",
+      "property": "audience",
+      "value": [
+        "shirt-shopper"
+      ]
+    }
+  ],
+  "testRatio": 1,
+  "variations": {},
+  "lastUpdated": 1661884837628,
+  "firstPublished": 1661884837626,
+  "rev": "vgt15p8pyvs",
+  "@originOrg": "1c3b72c36b194b318c40d99ec0a3bf75",
+  "@originContentId": "3723234e2d60474ba6ed955a2f31eadb",
+  "@originModelId": "0a0f3122d3364ad598947496faaba70b"
+}
