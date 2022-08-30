@@ -73,22 +73,40 @@ E.g. if your site is now live at `https://my-site.vercel.app`, you can go back t
 
 <img alt="Screenshot of updating your Preview URL" src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2F09ab3eadebe5453883f77e60c97a9eba">
 
-### Explore the code
+## Personalization Methodology
 
-Some key places to look
+<img alt="Diagram of the personalization strategy" src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2Fcfa77feb419545b68449f00d3842cf0b">
+
+In short, to personalize a page, we rewrite a basic path to a path + a hash of personalized attribtues.
+
+For instance, if you have a `pages/page.tsx`, you can rename it to `pages/page/[hash].tsx`, and add it to be included into the rewriting [middleware](site/middleware.ts) to add the personalized hash at the end.
+
+You can now have your page return personalized content based on what is in the hash, and this is purely automatic via what `personalization.*` cookies are present
+
+You can set them at any time to target off of, for instance
+
+```js
+Cookies.set('personalization.returnVisitor', 'true')
+```
+
+And now your `/page` will be rewritten to `/page/returnVisitor=true` when that cookie is present, and be handled accordingly
+
+## Explore the code
+
+Some key places to look in the codebase:
 
 - [site/config/builder.ts](site/config/builder.ts) is where we configure Builder.io custom components and settings
 - <a href="site/pages/[[...pages]].tsx">site/pages/[[...pages]].tsx</a> is where we integrate page building, including fetching data from Builder.io and rendering it
 - [site/middleware.ts](site/middleware.ts) is where we create and configure the edge middleware for personalizing pages
 
-### Next Steps
+## Next Steps
 
 Learn more about
 
 - Developing with [Builder.io](https://www.builder.io/c/docs/developers)
 - Registering custom components with [Builder.io](https://www.builder.io/c/docs/custom-components-intro)
 - Learn more about [Next.js Middleware](https://nextjs.org/docs/advanced-features/middleware) and [Vercel Edge Functions](https://vercel.com/docs/concepts/functions/edge-functions)
-- Learn more about the [Next.js personalization](https://github.com/BuilderIO/builder/blob/main/packages/personalization-utils/README.md) utils used in this example
+- Learn more about the [Next.js personalization utils](https://github.com/BuilderIO/builder/blob/main/packages/personalization-utils/README.md) used in this example
 
 ### Troubleshooting
 
