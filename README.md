@@ -2,7 +2,7 @@
 
 This is a fork of [Next.js Commerce](https://github.com/vercel/commerce) with [Builder.io](https://www.builder.io) integrated and using [Edge Middleware](https://vercel.com/docs/concepts/functions/edge-middleware) to personalize pages with great performance.
 
-**⚡ Dynamic at the speed of static ⚡**
+Dynamic at the speed of static ⚡
 
 ![Video demo of personalized site](https://user-images.githubusercontent.com/844291/187516199-bd09d52b-f44e-4c41-8f00-2079ab8820bc.gif)
 
@@ -25,6 +25,8 @@ Cookies.set('personalization.returnVisitor', 'true')
 And now your `/page` will be rewritten to `/page/returnVisitor=true` when that cookie is present, and be handled accordingly
 
 Then, you can visually create and edit pages, sections, and data on your site with Builder.io's visual editor, dragging and dropping with your React components and publish unlimited variations to your site without any code or deploys needed:
+
+![Example of editing in Builder.io](https://user-images.githubusercontent.com/844291/187518010-ac87a42e-74de-46a0-b0c1-c8e2d97af547.gif)
 
 ## Get Started
 
@@ -104,6 +106,9 @@ Some key places to look in the codebase:
 - [site/config/builder.ts](site/config/builder.ts) is where we configure Builder.io custom components and settings
 - <a href="site/pages/[[...pages]].tsx">site/pages/[[...pages]].tsx</a> is where we integrate page building, including fetching data from Builder.io and rendering it
 - [site/middleware.ts](site/middleware.ts) is where we create and configure the edge middleware for personalizing pages
+
+<img width="620" alt="Diagram of the tech stack used" src="https://user-images.githubusercontent.com/844291/187518090-e112e48c-e76e-41b5-9f81-8ecbf10a18c6.png">
+
 
 ## Next Steps
 
