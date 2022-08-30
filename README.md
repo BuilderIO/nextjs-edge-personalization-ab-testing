@@ -2,6 +2,24 @@
 
 This is a fork of [Next.js Commerce](https://github.com/vercel/commerce) with [Builder.io](https://www.builder.io) integrated and using [Edge Middleware](https://vercel.com/docs/concepts/functions/edge-middleware) to personalize pages with great performance.
 
+## How this works
+
+<img alt="Diagram of the personalization strategy" src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F4e7efe97686642f4805552bc075263e3">
+
+In short, to personalize a page, we rewrite a basic path to a path + a hash of personalized attribtues.
+
+For instance, if you have a `pages/page.tsx`, you can rename it to `pages/page/[hash].tsx`, and add it to be included into the rewriting [middleware](site/middleware.ts) to add the personalized hash at the end.
+
+You can now have your page return personalized content based on what is in the hash, and this is purely automatic via what `personalization.*` cookies are present
+
+You can set them at any time to target off of, for instance
+
+```js
+Cookies.set('personalization.returnVisitor', 'true')
+```
+
+And now your `/page` will be rewritten to `/page/returnVisitor=true` when that cookie is present, and be handled accordingly
+
 ## Get Started
 
 ### Run Locally
@@ -72,24 +90,6 @@ Once you deploy to vercel, you can update your Preview URL to use the live URL s
 E.g. if your site is now live at `https://my-site.vercel.app`, you can go back to [builder.io/models](https://builder.io/models), choose the `page` model, and update your Preview URL to `https://my-site.vercel.app` and save.
 
 <img alt="Screenshot of updating your Preview URL" src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2F09ab3eadebe5453883f77e60c97a9eba">
-
-## Personalization Methodology
-
-<img alt="Diagram of the personalization strategy" src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2Fcfa77feb419545b68449f00d3842cf0b">
-
-In short, to personalize a page, we rewrite a basic path to a path + a hash of personalized attribtues.
-
-For instance, if you have a `pages/page.tsx`, you can rename it to `pages/page/[hash].tsx`, and add it to be included into the rewriting [middleware](site/middleware.ts) to add the personalized hash at the end.
-
-You can now have your page return personalized content based on what is in the hash, and this is purely automatic via what `personalization.*` cookies are present
-
-You can set them at any time to target off of, for instance
-
-```js
-Cookies.set('personalization.returnVisitor', 'true')
-```
-
-And now your `/page` will be rewritten to `/page/returnVisitor=true` when that cookie is present, and be handled accordingly
 
 ## Explore the code
 
