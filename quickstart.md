@@ -1,6 +1,6 @@
 ## Quick Start
 
-### Clone repo and unzip the demo space files
+#### Clone repo and unzip the demo space files
 
 The file `builder-demo-space.zip` contains the space clone that we're going to use to initialize your new space in the following steps.
 ```
