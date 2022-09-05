@@ -6,16 +6,24 @@ This is a fork of [Next.js Commerce](https://github.com/vercel/commerce) with [B
 
 [Try it here](https://builder.io/demo/commerce?demoHost=nextjs-edge-personalization-demo.vercel.app&demoModel=commerce)
 
-Dynamic at the speed of static ⚡
-
 ![Video demo of personalized site](https://user-images.githubusercontent.com/844291/187516199-bd09d52b-f44e-4c41-8f00-2079ab8820bc.gif)
 
 ## Contents
 
+- [Overview](#overview)
 - [How this works](#how-this-works)
 - [Get Started](#get-started)
 - [Explore the code](#explore-the-code)
 - [Next Steps](#next-steps)
+
+## Overview
+
+View an in depth overview of Builder.io + Vercel Edge Functions [here](https://www.youtube.com/watch?v=whn2o0LlJyA)
+
+<a href="https://www.youtube.com/watch?v=whn2o0LlJyA">
+<img width="600" alt="Video Thumbnail for the in depth overview of Builder.io + Vercel Edge Functions" src="https://user-images.githubusercontent.com/844291/188515922-f58cf541-5543-441d-85bf-dfb37427734f.png">
+</a>
+
 
 ## How this works
 
