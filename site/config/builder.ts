@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic'
 import { Builder, withChildren } from '@builder.io/react'
+import { withTooltip } from '../components/with-tooltip'
 
 export default {
   // Put your Builder public API key here:
@@ -11,7 +12,10 @@ export default {
 Builder.registerComponent(
   // We dynamically import components so they are only downloaded in the browser
   // when used
-  dynamic(() => import('../components/ui/Hero')),
+  withTooltip(
+    'https://github.com/BuilderIO/nextjs-edge-personalization-demo/blob/main/site/components/ui/Hero/Hero.tsx',
+    dynamic(() => import('../components/ui/Hero'))
+  ),
   {
     name: 'Hero',
     image:
@@ -32,14 +36,20 @@ Builder.registerComponent(
 )
 
 Builder.registerComponent(
-  dynamic(() => import('../components/common/Searchbar')),
+  withTooltip(
+    'https://github.com/BuilderIO/nextjs-edge-personalization-demo/blob/main/site/components/common/Searchbar/Searchbar.tsx',
+    dynamic(() => import('../components/common/Searchbar'))
+  ),
   {
     name: 'Searchbar',
     image: 'https://tabler-icons.io/static/tabler-icons/icons-png/search.png',
   }
 )
 Builder.registerComponent(
-  dynamic(() => import('../components/ui/Rating')),
+  withTooltip(
+    'https://github.com/BuilderIO/nextjs-edge-personalization-demo/blob/main/site/components/ui/Rating/Rating.tsx',
+    dynamic(() => import('../components/ui/Rating'))
+  ),
   {
     name: 'Rating',
     image: 'https://tabler-icons.io/static/tabler-icons/icons-png/stars.png',
@@ -53,7 +63,10 @@ Builder.registerComponent(
   }
 )
 Builder.registerComponent(
-  dynamic(() => import('../components/ui/ButtonLink')),
+  withTooltip(
+    'https://github.com/BuilderIO/nextjs-edge-personalization-demo/blob/main/site/components/ui/ButtonLink/ButtonLink.tsx',
+    dynamic(() => import('../components/ui/ButtonLink'))
+  ),
   {
     name: 'Button',
     image:
@@ -75,8 +88,11 @@ Builder.registerComponent(
 )
 
 Builder.registerComponent(
-  dynamic(async () =>
-    withChildren((await import('../components/ui/Container')).default)
+  withTooltip(
+    'https://github.com/BuilderIO/nextjs-edge-personalization-demo/blob/main/site/components/ui/Container/Container.tsx',
+    dynamic(async () =>
+      withChildren((await import('../components/ui/Container')).default)
+    )
   ),
   {
     name: 'Container',
@@ -90,7 +106,10 @@ Builder.registerComponent(
 )
 
 Builder.registerComponent(
-  dynamic(() => import('../components/common/ProductCell/ProductCell')),
+  withTooltip(
+    'https://github.com/BuilderIO/nextjs-edge-personalization-demo/blob/main/site/components/common/ProductCell/ProductCell.tsx',
+    dynamic(() => import('../components/common/ProductCell/ProductCell'))
+  ),
   {
     name: 'Product Cell',
     image:
@@ -115,8 +134,11 @@ Builder.registerComponent(
 )
 
 Builder.registerComponent(
-  dynamic(async () =>
-    withChildren(await (await import('../components/ui/Collapse')).default)
+  withTooltip(
+    'https://github.com/BuilderIO/nextjs-edge-personalization-demo/blob/main/site/components/ui/Collapse/Collapse.tsx',
+    dynamic(async () =>
+      withChildren((await import('../components/ui/Collapse')).default)
+    )
   ),
   {
     name: 'Collapse',

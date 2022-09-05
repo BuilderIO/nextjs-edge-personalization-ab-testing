@@ -118,7 +118,7 @@ const Layout: React.FC<Props> = ({
       href: '/product/lightweight-jacket',
     },
     {
-      label: 'Source',
+      label: 'Source Code',
       href: 'https://github.com/BuilderIO/nextjs-edge-personalization-demo',
       external: true,
     },
