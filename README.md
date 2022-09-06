@@ -2,7 +2,7 @@
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FBuilderIO%2Fnextjs-edge-personalization-demo&project-name=nextjs-edge-personalization-builder-io&repository-name=nextjs-edge-personalization-builder-io&demo-title=Next.js%20Edge%20Personalization%20with%20Builder.io&demo-description=Visually%20build%20a%20personalized%20Next.js%20site%20using%20Edge%20Middleware%20and%20Builder.io&demo-url=https%3A%2F%2Fnextjs-edge-personalization-demo.vercel.app%2F&demo-image=https%3A%2F%2Fuser-images.githubusercontent.com%2F844291%2F187518010-ac87a42e-74de-46a0-b0c1-c8e2d97af547.gif&build-command=cd%20..%20%;%20yarn%20build&root-directory=site)
 
-This is a fork of [Next.js Commerce](https://github.com/vercel/commerce) with [Builder.io](https://www.builder.io) integrated and using [Edge Middleware](https://vercel.com/docs/concepts/functions/edge-middleware) to personalize pages with great performance.
+This is a fork of [Next.js Commerce](https://github.com/vercel/commerce) with [Builder.io](https://www.builder.io) integrated and using [Edge Middleware](https://vercel.com/docs/concepts/functions/edge-middleware) to personalize pages with targeting and a/b testing with great performance.
 
 [Try it here](https://builder.io/demo/commerce?demoHost=nextjs-edge-personalization-demo-git-editor-demo-builder-io.vercel.app&demoModel=commerce)
 
