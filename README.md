@@ -4,7 +4,7 @@
 
 This is a fork of [Next.js Commerce](https://github.com/vercel/commerce) with [Builder.io](https://www.builder.io) integrated and using [Edge Middleware](https://vercel.com/docs/concepts/functions/edge-middleware) to personalize pages with targeting and a/b testing with great performance.
 
-[Try it here](https://builder.io/demo/commerce?demoHost=nextjs-edge-personalization-demo-git-editor-demo-builder-io.vercel.app&demoModel=commerce)
+[Try it here](https://builder.io/demo/commerce?demoHost=nextjs-edge-personalization-demo-git-editor-demo-builder-io.vercel.app&demoModel=page)
 
 ![Video demo of personalized site](https://user-images.githubusercontent.com/844291/187516199-bd09d52b-f44e-4c41-8f00-2079ab8820bc.gif)
 
