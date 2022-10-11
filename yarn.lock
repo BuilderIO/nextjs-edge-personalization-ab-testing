@@ -515,12 +515,12 @@
   dependencies:
     json-stringify-deterministic "^1.0.6"
 
-"@builder.io/react@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@builder.io/react/-/react-2.0.3.tgz#0063a76172f945b22793f2d3f8a6e2bbdd653b08"
-  integrity sha512-/5YQnyC8bJBqBwPauseDEbHN6AXECdcUQzTtHNdD9BsveTygcYRresi2VJ3RefjeIje44V36/1g0/uY6ezHqOA==
+"@builder.io/react@^2.0.9":
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/@builder.io/react/-/react-2.0.9.tgz#58a87784e548b4586258445380e11eb6c7ee655e"
+  integrity sha512-Prj/sK3/vBaqR77V9PNQqzHQfZbj9a3RklI6qAbuDZJMT+gjgsnpuzPzHdmsvS7y3+QtapbxCI1++tnsYj5yIA==
   dependencies:
-    "@builder.io/sdk" "^1.1.27"
+    "@builder.io/sdk" "^1.1.30"
     "@emotion/core" "^10.0.17"
     hash-sum "^2.0.0"
     preact "^10.1.0"
@@ -529,10 +529,10 @@
     node-fetch "^2.6.1"
     prop-types "^15.7.2"
 
-"@builder.io/sdk@^1.1.27":
-  version "1.1.27"
-  resolved "https://registry.yarnpkg.com/@builder.io/sdk/-/sdk-1.1.27.tgz#383f595bbf3cfad91fd0a0f44d750947c30bcce2"
-  integrity sha512-vHtmDKDBYBLq6Xhh2qUaYk1/V3VL30z5jASAgY9+H37DXXfYdZbTxaLIRilOmn9YiCkrR32V8BPsiIRWWVwhxA==
+"@builder.io/sdk@^1.1.30":
+  version "1.1.30"
+  resolved "https://registry.yarnpkg.com/@builder.io/sdk/-/sdk-1.1.30.tgz#25718d3685624677fe61ffc4642923392afed5a6"
+  integrity sha512-HS5TSs/r7DsDFYaMQ8poXcMD/1jFjgrxulf1Ai/1y494QlxNyhQKQSZyhYJe2B+C2nZJTPfJjEFQMDSlACeoLA==
   dependencies:
     hash-sum "^2.0.0"
     node-fetch "^2.3.0"
