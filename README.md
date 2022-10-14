@@ -18,7 +18,7 @@ This is a fork of [Next.js Commerce](https://github.com/vercel/commerce) with [B
 
 ## Overview
 
-View an in depth overview of Builder.io + Vercel Edge Functions [here](https://www.youtube.com/watch?v=whn2o0LlJyA)
+View an in depth overview of Builder.io + Vercel Edge Functions [here](https://www.youtube.com/watch?v=whn2o0LlJyA).
 
 <a href="https://www.youtube.com/watch?v=whn2o0LlJyA">
 <img width="600" alt="Video Thumbnail for the in depth overview of Builder.io + Vercel Edge Functions" src="https://user-images.githubusercontent.com/844291/188515922-f58cf541-5543-441d-85bf-dfb37427734f.png">
@@ -33,7 +33,7 @@ In short, to personalize a page, we rewrite a basic path to a path + a hash of p
 
 For instance, if you have a `pages/page.tsx`, you can rename it to `pages/page/[hash].tsx`, and add it to be included into the rewriting [middleware](site/middleware.ts) to add the personalized hash at the end.
 
-You can now have your page return personalized content based on what is in the hash, and this is purely automatic via what `personalization.*` cookies are present
+You can now have your page return personalized content based on what is in the hash, and this is purely automatic via what `personalization.*` cookies are present.
 
 You can set them at any time to target off of, for instance:
 
@@ -51,7 +51,7 @@ Then, you can visually create and edit pages, sections, and data on your site wi
 
 ### Run Locally
 
-#### Coone this repo
+#### Clone this repo
 
 ```bash
 git clone https://github.com/BuilderIO/nextjs-edge-personalization-demo.git
@@ -69,7 +69,7 @@ yarn dev
 
 #### Connect Builder.io
 
-To connect [Builder.io](https://www.builder.io), create a [free account](https://www.builder.io/signup), from your account settings copy your Public API Key and paste it into [site/config/builder.ts](site/config/builder.ts#L6:L6)
+To connect [Builder.io](https://www.builder.io), create a [free account](https://www.builder.io/signup), from your account settings copy your Public API Key and paste it into [site/config/builder.ts](site/config/builder.ts#L6:L6).
 
 <img src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2Fafd38ce9af0b4f25988759f8c5936fe5" alt="Screenshot of copying your API key">
 
@@ -81,7 +81,7 @@ Next, head to [builder.io/models](https://builder.io/models) and choose the `pag
 
 #### Configure personalization attributes
 
-Now, in Builder.io add some [targeting attributes](https://www.builder.io/c/docs/custom-targeting-attributes) to begin personalizing your content on. Head to [builder.io/account](https://builder.io/account) and click on the pencil next to `Custom targeting attributes` and add some attributes, for instance like you see here:
+Now, in Builder.io add some [targeting attributes](https://www.builder.io/c/docs/custom-targeting-attributes) to begin personalizing your content on. Head to [builder.io/account](https://builder.io/account) and click on the pencil next to `Custom targeting attributes` and add some attributes; for instance as in this next image:
 
 <img src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2Fff38618c937a4adda2fbaba4a445a38c" alt="Screenshots of the targeting UI configuration">
 
@@ -121,7 +121,7 @@ To get your site live, you can [deploy it to Vercel](https://nextjs.org/learn/ba
 
 Once you deploy to vercel, you can update your Preview URL to use the live URL so now others on your team can create content on your new site with Builder.io.
 
-E.g. if your site is now live at `https://my-site.vercel.app`, you can go back to [builder.io/models](https://builder.io/models), choose the `page` model, and update your Preview URL to `https://my-site.vercel.app` and save.
+For example, if your site is now live at `https://my-site.vercel.app`, you can go back to [builder.io/models](https://builder.io/models), choose the `page` model, and update your Preview URL to `https://my-site.vercel.app` and save.
 
 <img alt="Screenshot of updating your Preview URL" src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2F09ab3eadebe5453883f77e60c97a9eba">
 
@@ -129,20 +129,21 @@ E.g. if your site is now live at `https://my-site.vercel.app`, you can go back t
 
 Some key places to look in the codebase:
 
-- [site/config/builder.ts](site/config/builder.ts) is where we configure Builder.io custom components and settings
-- <a href="site/pages/[[...pages]].tsx">site/pages/[[...pages]].tsx</a> is where we integrate page building, including fetching data from Builder.io and rendering it
-- [site/middleware.ts](site/middleware.ts) is where we create and configure the edge middleware for personalizing pages
+- [site/config/builder.ts](site/config/builder.ts) is where we configure Builder.io custom components and settings.
+- <a href="site/pages/[[...pages]].tsx">site/pages/[[...pages]].tsx</a> is where we integrate page building, including fetching data from Builder.io and rendering it.
+- [site/middleware.ts](site/middleware.ts) is where we create and configure the edge middleware for personalizing pages.
 
 <img width="620" alt="Diagram of the tech stack used" src="https://user-images.githubusercontent.com/844291/187518090-e112e48c-e76e-41b5-9f81-8ecbf10a18c6.png">
 
 ## Next Steps
 
-Learn more about
+Learn more about:
 
-- Developing with [Builder.io](https://www.builder.io/c/docs/developers)
-- Registering custom components with [Builder.io](https://www.builder.io/c/docs/custom-components-intro)
-- Learn more about [Next.js Middleware](https://nextjs.org/docs/advanced-features/middleware) and [Vercel Edge Functions](https://vercel.com/docs/concepts/functions/edge-functions)
-- Learn more about the [Next.js personalization utils](https://github.com/BuilderIO/builder/blob/main/packages/personalization-utils/README.md) used in this example
+- [Developing with Builder.io](https://www.builder.io/c/docs/developers)
+- [Registering Custom Components with Builder.io](https://www.builder.io/c/docs/custom-components-intro)
+- [Using Query Params and Cookies in Next.js Static Pages](https://www.builder.io/blog/using-cookies-and-query-string-in-nextjs-static-pages)
+- [Next.js Middleware](https://nextjs.org/docs/advanced-features/middleware) and [Vercel Edge Functions](https://vercel.com/docs/concepts/functions/edge-functions)
+- [Next.js personalization utils](https://github.com/BuilderIO/builder/blob/main/packages/personalization-utils/README.md) used in this example
 
 ### Troubleshooting
 
