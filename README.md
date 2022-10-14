@@ -41,7 +41,9 @@ You can set them at any time to target off of, for instance:
 Cookies.set('personalization.returnVisitor', 'true')
 ```
 
-And now your `/page` will be rewritten to `/page/returnVisitor=true` when that cookie is present, and be handled accordingly
+And now your `/page` will be rewritten to `/page/returnVisitor=true` when that cookie is present, and be handled accordingly.
+
+You can learn more about this technique [here](https://www.builder.io/blog/using-cookies-and-query-string-in-nextjs-static-pages).
 
 Then, you can visually create and edit pages, sections, and data on your site with Builder.io's visual editor, dragging and dropping with your React components and publish unlimited variations to your site without any code or deploys needed:
 
