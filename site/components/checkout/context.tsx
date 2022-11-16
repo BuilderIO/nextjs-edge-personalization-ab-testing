@@ -65,7 +65,7 @@ const checkoutReducer = (state: State, action: Action): State => {
   }
 }
 
-export const CheckoutProvider: FC = (props) => {
+export const CheckoutProvider: FC<{ children?: React.ReactNode }> = (props) => {
   const [state, dispatch] = useReducer(checkoutReducer, initialState)
 
   const setCardFields = useCallback(
@@ -86,7 +86,10 @@ export const CheckoutProvider: FC = (props) => {
 
   const cardFields = useMemo(() => state.cardFields, [state.cardFields])
 
-  const addressFields = useMemo(() => state.addressFields, [state.addressFields])
+  const addressFields = useMemo(
+    () => state.addressFields,
+    [state.addressFields]
+  )
 
   const value = useMemo(
     () => ({
@@ -96,7 +99,13 @@ export const CheckoutProvider: FC = (props) => {
       setAddressFields,
       clearCheckoutFields,
     }),
-    [cardFields, addressFields, setCardFields, setAddressFields, clearCheckoutFields]
+    [
+      cardFields,
+      addressFields,
+      setCardFields,
+      setAddressFields,
+      clearCheckoutFields,
+    ]
   )
 
   return <CheckoutContext.Provider value={value} {...props} />

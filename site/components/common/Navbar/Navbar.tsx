@@ -4,6 +4,7 @@ import s from './Navbar.module.css'
 import NavbarRoot from './NavbarRoot'
 import { Logo, Container } from '@components/ui'
 import { Searchbar, UserNav } from '@components/common'
+import { Builder } from '@builder.io/react'
 
 interface Link {
   href: string
@@ -29,7 +30,16 @@ const Navbar: FC<NavbarProps> = ({ links }) => (
             {links?.map((l) => (
               <Link href={l.href} key={l.href}>
                 <a
-                  {...(l.external ? { target: '_blank' } : {})}
+                  {...(l.external
+                    ? {
+                        target: '_blank',
+                        onClick: () => {
+                          if (Builder.isEditing) {
+                            open(l.href, '_blank')
+                          }
+                        },
+                      }
+                    : {})}
                   className={s.link}
                 >
                   {l.label}

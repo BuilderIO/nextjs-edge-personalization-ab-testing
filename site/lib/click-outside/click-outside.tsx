@@ -14,6 +14,7 @@ interface ClickOutsideProps {
   active: boolean
   onClick: (e?: MouseEvent) => void
   ref?: Ref<any>
+  children?: React.ReactNode
 }
 
 /**
