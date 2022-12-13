@@ -112,6 +112,10 @@ At the top of the editor, you can configure which audiences should see this page
 
 <img src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2Fe1d25b04a2914bcbb59912140939bf1a" alt="Screenshots of targeting your page">
 
+### Deploy to Netlify
+
+No work needed, just connect your repo to Netlify!
+
 ### Deploy to Vercel
 
 To get your site live, you can [deploy it to Vercel](https://nextjs.org/learn/basics/deploying-nextjs-app/deploy). Be sure to use the following configuration:
@@ -144,7 +148,7 @@ Learn more about:
 - [Developing with Builder.io](https://www.builder.io/c/docs/developers)
 - [Registering Custom Components with Builder.io](https://www.builder.io/c/docs/custom-components-intro)
 - [Using Query Params and Cookies in Next.js Static Pages](https://www.builder.io/blog/using-cookies-and-query-string-in-nextjs-static-pages)
-- [Next.js Middleware](https://nextjs.org/docs/advanced-features/middleware) and [Vercel Edge Functions](https://vercel.com/docs/concepts/functions/edge-functions)
+- [Next.js Middleware](https://nextjs.org/docs/advanced-features/middleware)
 - [Next.js personalization utils](https://github.com/BuilderIO/builder/blob/main/packages/personalization-utils/README.md) used in this example
 
 ### Troubleshooting
