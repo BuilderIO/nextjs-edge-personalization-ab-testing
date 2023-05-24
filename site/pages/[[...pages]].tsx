@@ -25,8 +25,12 @@ export async function getStaticProps({
     (await builder
       .get('page', {
         apiKey: builderConfig.apiKey,
-        userAttributes: attributes!,
+        userAttributes: {
+          locale,
+          ...attributes,
+        },
         cachebust: true,
+        locale,
       })
       .promise()) || null
 
@@ -37,6 +41,7 @@ export async function getStaticProps({
   return {
     props: {
       page,
+      locale,
       categories,
       attributes: attributes,
     },
@@ -54,6 +59,7 @@ export async function getStaticPaths() {
 export default function Pages({
   page,
   attributes,
+  locale,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const isPreviewingInBuilder = useIsPreviewing()
 
@@ -78,7 +84,7 @@ export default function Pages({
         }}
       />
       {isPreviewingInBuilder || page ? (
-        <BuilderComponent model="page" content={page} />
+        <BuilderComponent locale={locale} model="page" content={page} />
       ) : (
         <DefaultErrorPage statusCode={404} />
       )}

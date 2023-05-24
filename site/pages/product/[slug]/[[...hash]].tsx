@@ -46,9 +46,11 @@ export async function getStaticProps({
     (await builder
       .get('product-editorial', {
         userAttributes: {
+          locale,
           ...attributes,
           product: params?.slug,
         },
+        locale,
       })
       .promise()) || null
 
@@ -67,6 +69,7 @@ export async function getStaticProps({
       relatedProducts,
       categories,
       builderSection,
+      locale,
     },
     revalidate: 1,
   }
@@ -93,6 +96,7 @@ export default function ProductPage({
   product,
   relatedProducts,
   builderSection,
+  locale,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const router = useRouter()
   const isPreviewingInBuilder = useIsPreviewing()
@@ -115,7 +119,11 @@ export default function ProductPage({
     <>
       <ProductView product={product} relatedProducts={relatedProducts} />
       {(builderSection || isPreviewingInBuilder) && (
-        <BuilderComponent model="product-editorial" content={builderSection} />
+        <BuilderComponent
+          model="product-editorial"
+          locale={locale}
+          content={builderSection}
+        />
       )}
     </>
   )
