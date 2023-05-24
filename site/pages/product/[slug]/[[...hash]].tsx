@@ -42,6 +42,7 @@ export async function getStaticProps({
   const { products: relatedProducts } = await allProductsPromise
 
   const { attributes } = parsePersonalizedURL(params?.hash || [])
+  const useLocale = attributes?.locale || locale
   const builderSection =
     (await builder
       .get('product-editorial', {
@@ -69,7 +70,7 @@ export async function getStaticProps({
       relatedProducts,
       categories,
       builderSection,
-      locale,
+      locale: useLocale,
     },
     revalidate: 1,
   }

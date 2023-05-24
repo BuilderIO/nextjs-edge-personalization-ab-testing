@@ -21,6 +21,7 @@ export async function getStaticProps({
   const config = { locale, locales }
   const { categories } = await commerce.getSiteInfo({ config, preview })
   const { attributes } = parsePersonalizedURL(params!.pages || [])
+  const useLocale = attributes?.locale || locale
   const page =
     (await builder
       .get('page', {
@@ -41,7 +42,7 @@ export async function getStaticProps({
   return {
     props: {
       page,
-      locale,
+      locale: useLocale,
       categories,
       attributes: attributes,
     },
