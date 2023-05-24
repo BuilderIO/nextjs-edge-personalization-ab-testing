@@ -1,11 +1,13 @@
 import '@assets/main.css'
 import '@assets/chrome-bug.css'
 import 'keen-slider/keen-slider.min.css'
+import '@algolia/autocomplete-theme-classic/dist/theme.css'
 import Cookies from 'js-cookie'
 import { FC, useEffect } from 'react'
 import type { AppProps } from 'next/app'
 import { Head } from '@components/common'
 import { ManagedUIContext } from '@components/ui/context'
+import '../components/algolia/override.css'
 
 const Noop: FC = ({ children }) => <>{children}</>
 
@@ -16,7 +18,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     document.body.classList?.remove('loading')
 
     addEventListener('visibilitychange', (event) => {
-      Cookies.set('personalization.returnVisitor', 'true', { expires: 365 })
+      // Cookies.set('personalization.returnVisitor', 'true', { expires: 365 })
     })
   }, [])
 

@@ -27,11 +27,14 @@ export async function getStaticProps({
       .get('page', {
         apiKey: builderConfig.apiKey,
         userAttributes: {
-          locale,
+          locale: useLocale,
           ...attributes,
         },
         cachebust: true,
-        locale,
+        locale: useLocale,
+        options: {
+          locale: useLocale,
+        },
       })
       .promise()) || null
 

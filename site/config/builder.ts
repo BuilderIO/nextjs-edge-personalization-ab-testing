@@ -38,6 +38,32 @@ Builder.registerComponent(
     image: 'https://tabler-icons.io/static/tabler-icons/icons-png/search.png',
   }
 )
+
+// Builder.registerComponent(
+//   dynamic(() => import('../components/algolia/AutoComplete')),
+//   {
+//     name: 'Algolia Autocomplete',
+//     image:
+//       'https://cdn.builder.io/api/v1/image/assets%2F1fa6810c36c54e87bfe1a6cc0f0be906%2Ff30fd90c31634e5ebb716fad734185f4',
+//     inputs: [
+//       {
+//         name: 'width',
+//         type: 'text',
+//         defaultValue: '250px',
+//       },
+//     ],
+//   }
+// )
+
+Builder.registerComponent(
+  dynamic(() => import('../components/algolia/SearchGrid')),
+  {
+    name: 'Algolia SearchGrid',
+    image:
+      'https://cdn.builder.io/api/v1/image/assets%2F1fa6810c36c54e87bfe1a6cc0f0be906%2Ff30fd90c31634e5ebb716fad734185f4',
+  }
+)
+
 Builder.registerComponent(
   dynamic(() => import('../components/ui/Rating')),
   {
