@@ -47,11 +47,14 @@ export async function getStaticProps({
     (await builder
       .get('product-editorial', {
         userAttributes: {
-          locale,
+          locale: useLocale,
           ...attributes,
           product: params?.slug,
         },
-        locale,
+        options: {
+          locale: useLocale,
+        },
+        locale: useLocale,
       })
       .promise()) || null
 
