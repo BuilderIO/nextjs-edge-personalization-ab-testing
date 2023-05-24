@@ -98,6 +98,7 @@ Builder.registerComponent(
       {
         name: 'text',
         type: 'text',
+        localized: true,
         defaultValue: 'Click me',
       },
     ],
