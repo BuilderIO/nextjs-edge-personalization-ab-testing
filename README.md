@@ -24,7 +24,6 @@ View an in depth overview of Builder.io + Vercel Edge Functions [here](https://w
 <img width="600" alt="Video Thumbnail for the in depth overview of Builder.io + Vercel Edge Functions" src="https://user-images.githubusercontent.com/844291/188515922-f58cf541-5543-441d-85bf-dfb37427734f.png">
 </a>
 
-
 ## How this works
 
 <img alt="Diagram of the personalization strategy" src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F4e7efe97686642f4805552bc075263e3">
@@ -111,10 +110,6 @@ Now, go to [builder.io/content](https://builder.io/content) and choose the `+ ne
 At the top of the editor, you can configure which audiences should see this page variant, and publish.
 
 <img src="https://cdn.builder.io/api/v1/image/assets%2F1c3b72c36b194b318c40d99ec0a3bf75%2Fe1d25b04a2914bcbb59912140939bf1a" alt="Screenshots of targeting your page">
-
-### Deploy to Netlify
-
-No work needed, just connect your repo to Netlify!
 
 ### Deploy to Vercel
 
