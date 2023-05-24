@@ -49,8 +49,6 @@ const I18nWidget: FC = () => {
     defaultLocale
   const options = locales?.filter((val) => val !== currentLocale)
 
-  console.log('currentLocale', currentLocale)
-
   useEffect(() => {
     setIsBrowser(true)
   }, [])

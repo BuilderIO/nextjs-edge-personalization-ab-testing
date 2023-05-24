@@ -153,6 +153,41 @@ Builder.registerComponent(
 )
 
 Builder.registerComponent(
+  dynamic(() => import('../components/common/Algolia/SearchGrid')),
+  {
+    name: 'Algolia Recs',
+    image:
+      'https://cdn.builder.io/api/v1/image/assets%2F1fa6810c36c54e87bfe1a6cc0f0be906%2Ff30fd90c31634e5ebb716fad734185f4',
+    inputs: [
+      {
+        name: 'collection',
+        type: 'string',
+        enum: ['footwear', 'apparel'],
+        defaultValue: 'footwear',
+      },
+      {
+        name: 'type',
+        type: 'string',
+        enum: ['grid', 'row'],
+        defaultValue: 'grid',
+      },
+      {
+        name: 'cellWidth',
+        type: 'number',
+        defaultValue: 380,
+        step: 20,
+      },
+      {
+        name: 'variant',
+        type: 'string',
+        defaultValue: 'simple',
+        enum: ['default', 'slim', 'simple'],
+      },
+    ],
+  }
+)
+
+Builder.registerComponent(
   dynamic(async () =>
     withChildren(await (await import('../components/ui/Collapse')).default)
   ),
@@ -179,5 +214,6 @@ Builder.register('insertMenu', {
     { name: 'Rating' },
     { name: 'Container' },
     { name: 'Product Cell' },
+    { name: 'Algolia Recs' },
   ],
 })

@@ -14,6 +14,9 @@ module.exports = withCommerceConfig({
     locales: ['en-US', 'fr-FR'],
     defaultLocale: 'en-US',
   },
+  images: {
+    domains: ['files-na.epusercontent.com'],
+  },
   rewrites() {
     return [
       (isBC || isShopify || isSwell || isVendure || isSaleor) && {
