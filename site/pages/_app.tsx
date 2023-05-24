@@ -1,7 +1,6 @@
 import '@assets/main.css'
 import '@assets/chrome-bug.css'
 import 'keen-slider/keen-slider.min.css'
-import '@algolia/autocomplete-theme-classic/dist/theme.css'
 import Cookies from 'js-cookie'
 import { FC, useEffect } from 'react'
 import type { AppProps } from 'next/app'
