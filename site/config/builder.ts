@@ -21,11 +21,13 @@ Builder.registerComponent(
         name: 'headline',
         type: 'text',
         defaultValue: 'I am the headline',
+        localized: true,
       },
       {
         name: 'description',
         type: 'longText',
         defaultValue: 'I am the description',
+        localized: true,
       },
     ],
   }

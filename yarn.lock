@@ -508,24 +508,24 @@
   dependencies:
     json-stringify-deterministic "^1.0.6"
 
-"@builder.io/react@^2.0.9":
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/@builder.io/react/-/react-2.0.9.tgz#58a87784e548b4586258445380e11eb6c7ee655e"
-  integrity sha512-Prj/sK3/vBaqR77V9PNQqzHQfZbj9a3RklI6qAbuDZJMT+gjgsnpuzPzHdmsvS7y3+QtapbxCI1++tnsYj5yIA==
+"@builder.io/react@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@builder.io/react/-/react-3.0.1.tgz#c108a56004e985ab8eebda292d1f858ed0aa828a"
+  integrity sha512-0wuunjJW/Bwk0FXuVADP9Rca5++xwooKpfeuRT936gsnzGFbl4eoupuI/MJ2ReCNl/vjtHiTYwzmkQJJDBc21w==
   dependencies:
-    "@builder.io/sdk" "^1.1.30"
+    "@builder.io/sdk" "2.0.1"
     "@emotion/core" "^10.0.17"
     hash-sum "^2.0.0"
     preact "^10.1.0"
-    vm2 "^3.9.10"
+    vm2 "^3.9.18"
   optionalDependencies:
     node-fetch "^2.6.1"
     prop-types "^15.7.2"
 
-"@builder.io/sdk@^1.1.30":
-  version "1.1.30"
-  resolved "https://registry.yarnpkg.com/@builder.io/sdk/-/sdk-1.1.30.tgz#25718d3685624677fe61ffc4642923392afed5a6"
-  integrity sha512-HS5TSs/r7DsDFYaMQ8poXcMD/1jFjgrxulf1Ai/1y494QlxNyhQKQSZyhYJe2B+C2nZJTPfJjEFQMDSlACeoLA==
+"@builder.io/sdk@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@builder.io/sdk/-/sdk-2.0.1.tgz#712a354d4e1b4286a1d8907c9e2dbb1eb3c570fc"
+  integrity sha512-FZXnpNt1wbvkj8/S7oJfjQ89xlCZhE7Gem6d/DGnY/A/DcckeobM3xFa0AeX1g6h9dhYNDDvP/ndcA5s3IsksQ==
   dependencies:
     hash-sum "^2.0.0"
     node-fetch "^2.3.0"
@@ -8749,10 +8749,10 @@ value-or-promise@1.0.11, value-or-promise@^1.0.11:
   resolved "https://registry.yarnpkg.com/value-or-promise/-/value-or-promise-1.0.11.tgz#3e90299af31dd014fe843fe309cefa7c1d94b140"
   integrity sha512-41BrgH+dIbCFXClcSapVs5M6GkENd3gQOJpEfPDNa71LsUGMXDL0jMWpI/Rh7WhX+Aalfz2TTS3Zt5pUsbnhLg==
 
-vm2@^3.9.10:
-  version "3.9.11"
-  resolved "https://registry.yarnpkg.com/vm2/-/vm2-3.9.11.tgz#a880f510a606481719ec3f9803b940c5805a06fe"
-  integrity sha512-PFG8iJRSjvvBdisowQ7iVF580DXb1uCIiGaXgm7tynMR1uTBlv7UJlB1zdv5KJ+Tmq1f0Upnj3fayoEOPpCBKg==
+vm2@^3.9.18:
+  version "3.9.19"
+  resolved "https://registry.yarnpkg.com/vm2/-/vm2-3.9.19.tgz#be1e1d7a106122c6c492b4d51c2e8b93d3ed6a4a"
+  integrity sha512-J637XF0DHDMV57R6JyVsTak7nIL8gy5KH4r1HiwWLf/4GBbb5MKL5y7LpmF4A8E2nR6XmzpmMFQ7V7ppPTmUQg==
   dependencies:
     acorn "^8.7.0"
     acorn-walk "^8.2.0"

@@ -1,10 +1,11 @@
 import cn from 'clsx'
 import Link from 'next/link'
-import { FC, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import s from './I18nWidget.module.css'
 import { Cross, ChevronUp } from '@components/icons'
 import ClickOutside from '@lib/click-outside'
+import Cookies from 'js-cookie'
 interface LOCALE_DATA {
   name: string
   img: {
@@ -14,11 +15,12 @@ interface LOCALE_DATA {
 }
 
 const LOCALES_MAP: Record<string, LOCALE_DATA> = {
-  es: {
-    name: 'Español',
+  'fr-FR': {
+    name: 'French',
     img: {
-      filename: 'flag-es-co.svg',
-      alt: 'Bandera Colombiana',
+      filename:
+        'https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1599px-Flag_of_France.svg.png',
+      alt: '',
     },
   },
   'en-US': {
@@ -31,6 +33,7 @@ const LOCALES_MAP: Record<string, LOCALE_DATA> = {
 }
 
 const I18nWidget: FC = () => {
+  const [isBrowser, setIsBrowser] = useState(false)
   const [display, setDisplay] = useState(false)
   const {
     locale,
@@ -39,8 +42,24 @@ const I18nWidget: FC = () => {
     asPath: currentPath,
   } = useRouter()
 
-  const options = locales?.filter((val) => val !== locale)
-  const currentLocale = locale || defaultLocale
+  const currentLocale =
+    (Cookies.get('personalization.locale') &&
+      JSON.parse(Cookies.get('personalization.locale')!)) ||
+    locale ||
+    defaultLocale
+  const options = locales?.filter((val) => val !== currentLocale)
+
+  console.log('currentLocale', currentLocale)
+
+  useEffect(() => {
+    setIsBrowser(true)
+  }, [])
+
+  if (!isBrowser) {
+    return null
+  }
+
+  const flagFile = LOCALES_MAP[currentLocale].img.filename
 
   return (
     <ClickOutside active={display} onClick={() => setDisplay(false)}>
@@ -54,7 +73,7 @@ const I18nWidget: FC = () => {
               width="20"
               height="20"
               className="block mr-2 w-5"
-              src={`/${LOCALES_MAP[currentLocale].img.filename}`}
+              src={flagFile.startsWith('https://') ? flagFile : `/${flagFile}`}
               alt={LOCALES_MAP[currentLocale].img.alt}
             />
             {options && (
@@ -79,14 +98,18 @@ const I18nWidget: FC = () => {
               <ul>
                 {options.map((locale) => (
                   <li key={locale}>
-                    <Link href={currentPath} locale={locale}>
-                      <a
-                        className={cn(s.item)}
-                        onClick={() => setDisplay(false)}
-                      >
-                        {LOCALES_MAP[locale].name}
-                      </a>
-                    </Link>
+                    <div
+                      className={cn(s.item)}
+                      onClick={() => {
+                        Cookies.set(
+                          'personalization.locale',
+                          JSON.stringify(locale)
+                        )
+                        location.reload()
+                      }}
+                    >
+                      {LOCALES_MAP[locale].name}
+                    </div>
                   </li>
                 ))}
               </ul>
