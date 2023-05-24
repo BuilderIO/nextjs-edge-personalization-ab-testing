@@ -33,7 +33,6 @@ function CustomHits(props: any) {
         flexWrap: 'wrap',
         flexDirection: 'row',
         width: '100%',
-        backgroundColor: 'red',
         flex: 1,
       }}
     >
@@ -56,17 +55,13 @@ export const AlgoliaSearchGrid = (props: Props) => {
         >
           <CustomHits
             {...props}
-            style={{ width: 500, backgroundColor: 'yellow' }}
             renderer={(hits: any) => {
               // console.log('hits ', hits)
               // todo: you can randomize the hits to make it cooler
               return (
                 <div>
                   {hits.map((product: any) => (
-                    <div
-                      key={product.objectID}
-                      style={{ width: 500, backgroundColor: 'blue' }}
-                    >
+                    <div key={product.objectID} style={{ width: 500 }}>
                       <ProductCard product={parseToProductCell(product)} />
                     </div>
                   ))}
