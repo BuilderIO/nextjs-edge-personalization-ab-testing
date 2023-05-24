@@ -6,6 +6,34 @@ export default {
   apiKey: '1c3b72c36b194b318c40d99ec0a3bf75',
 }
 
+Builder.registerComponent(
+  dynamic(() => import('../components/ui/Image/Image')),
+  {
+    name: 'Image',
+    image:
+      'https://res.cloudinary.com/cloudinary-marketing/image/upload/v1599098500/creative_source/Logo/Cloud%20Glyph/cloudinary_cloud_glyph_blue_png.png',
+    inputs: [
+      {
+        name: 'cloudinaryOptions',
+        type: 'cloudinaryImageEditor',
+      },
+      {
+        name: 'aspectRatio',
+        type: 'aspectRatio',
+        defaultValue: 0.5,
+      },
+      {
+        name: 'fit',
+        type: 'string',
+        enum: ['cover', 'contain'],
+        defaultValue: 'cover',
+      },
+    ],
+    noWrap: true,
+    override: true,
+  }
+)
+
 // Register some components to be used in the drag and drop editor
 // https://www.builder.io/c/docs/custom-components-setup
 Builder.registerComponent(
