@@ -130,9 +130,16 @@ Builder.registerComponent(
       // Use an E-commerce integration for your platform to auto populate this list:
       // https://www.builder.io/c/docs/plugins-ecom-overview
       {
+        name: 'collection',
+        type: 'string',
+        enum: ['apparel', 'footwear'],
+        defaultValue: 'apparel',
+      },
+      {
         name: 'slug',
         type: 'string',
         enum: ['new-short-sleeve-t-shirt', 'lightweight-jacket'],
+        friendlyName: 'Product',
         defaultValue: 'lightweight-jacket',
       },
       {
