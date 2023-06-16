@@ -92,7 +92,7 @@ Builder.registerComponent(
       {
         name: 'link',
         type: 'url',
-        defaultValue: '',
+        defaultValue: '/',
         required: true,
       },
       {
