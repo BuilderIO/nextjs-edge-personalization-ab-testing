@@ -491,23 +491,46 @@
     json-stringify-deterministic "^1.0.6"
 
 "@builder.io/react@^2.0.9":
-  version "2.0.9"
-  resolved "https://registry.npmjs.org/@builder.io/react/-/react-2.0.9.tgz"
-  integrity sha512-Prj/sK3/vBaqR77V9PNQqzHQfZbj9a3RklI6qAbuDZJMT+gjgsnpuzPzHdmsvS7y3+QtapbxCI1++tnsYj5yIA==
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/@builder.io/react/-/react-2.2.0.tgz"
+  integrity sha512-u+7CUSoDIom+iPeGUvd6h0RkPnG8g8aO4UCLctcDkeOP0AUtH8L7XxIAe5YVI8FhVScwFhDE5bkTWGIL+yK/zw==
   dependencies:
-    "@builder.io/sdk" "^1.1.30"
+    "@builder.io/sdk" "1.3.0"
     "@emotion/core" "^10.0.17"
     hash-sum "^2.0.0"
     preact "^10.1.0"
-    vm2 "^3.9.10"
+    vm2 "^3.9.18"
   optionalDependencies:
     node-fetch "^2.6.1"
     prop-types "^15.7.2"
 
-"@builder.io/sdk@^1.1.20", "@builder.io/sdk@^1.1.30":
+"@builder.io/react@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.npmjs.org/@builder.io/react/-/react-3.1.1.tgz"
+  integrity sha512-jGHPt+DJQM4IHvnqgfSvXoyItESQ0zEkHj1BGx+PNQJwxz2BrMtWF0YC3xyb4dLXuBHOy6ACndVFBtM+oBQbfQ==
+  dependencies:
+    "@builder.io/sdk" "2.1.1"
+    "@emotion/core" "^10.0.17"
+    hash-sum "^2.0.0"
+    isolated-vm "^4.5.0"
+    preact "^10.1.0"
+  optionalDependencies:
+    node-fetch "^2.6.1"
+    prop-types "^15.7.2"
+
+"@builder.io/sdk@^1.1.20", "@builder.io/sdk@1.3.0":
   version "1.3.0"
   resolved "https://registry.npmjs.org/@builder.io/sdk/-/sdk-1.3.0.tgz"
   integrity sha512-pRsfFpoOtgpAdl9Oi0N0a/UMtXYqdjOwZH+3zF5uVlzPHnILT/ahfe7DpW5RBijFGiMfMnoERD1XguP6zDbl2g==
+  dependencies:
+    hash-sum "^2.0.0"
+    node-fetch "^2.3.0"
+    tslib "^1.10.0"
+
+"@builder.io/sdk@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/@builder.io/sdk/-/sdk-2.1.1.tgz"
+  integrity sha512-L70LeI6jNbMW52i3L8L1FbjLZw3LGVyk3S7Z7YvrR7FuNbe6UnET9q8+wTSpw3FglP6onwNlMXe8EwNJR8lXCg==
   dependencies:
     hash-sum "^2.0.0"
     node-fetch "^2.3.0"
@@ -2045,48 +2068,94 @@
     "@types/node" "*"
 
 "@typescript-eslint/parser@^5.21.0":
-  version "5.27.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-5.27.0.tgz"
-  integrity sha512-8oGjQF46c52l7fMiPPvX4It3u3V3JipssqDfHQ2hcR0AeR8Zge+OYyKUCm5b70X72N1qXt0qgHenwN6Gc2SXZA==
+  version "5.62.0"
+  resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-5.62.0.tgz"
+  integrity sha512-VlJEV0fOQ7BExOsHYAGrgbEiZoi8D+Bl2+f6V2RrXerRSylnp+ZBHmPvaIa8cz0Ajx7WO7Z5RqfgYg7ED1nRhA==
   dependencies:
-    "@typescript-eslint/scope-manager" "5.27.0"
-    "@typescript-eslint/types" "5.27.0"
-    "@typescript-eslint/typescript-estree" "5.27.0"
+    "@typescript-eslint/scope-manager" "5.62.0"
+    "@typescript-eslint/types" "5.62.0"
+    "@typescript-eslint/typescript-estree" "5.62.0"
     debug "^4.3.4"
 
-"@typescript-eslint/scope-manager@5.27.0":
-  version "5.27.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-5.27.0.tgz"
-  integrity sha512-VnykheBQ/sHd1Vt0LJ1JLrMH1GzHO+SzX6VTXuStISIsvRiurue/eRkTqSrG0CexHQgKG8shyJfR4o5VYioB9g==
+"@typescript-eslint/parser@^6.19.0":
+  version "6.19.0"
+  resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-6.19.0.tgz"
+  integrity sha512-1DyBLG5SH7PYCd00QlroiW60YJ4rWMuUGa/JBV0iZuqi4l4IK3twKPq5ZkEebmGqRjXWVgsUzfd3+nZveewgow==
   dependencies:
-    "@typescript-eslint/types" "5.27.0"
-    "@typescript-eslint/visitor-keys" "5.27.0"
+    "@typescript-eslint/scope-manager" "6.19.0"
+    "@typescript-eslint/types" "6.19.0"
+    "@typescript-eslint/typescript-estree" "6.19.0"
+    "@typescript-eslint/visitor-keys" "6.19.0"
+    debug "^4.3.4"
 
-"@typescript-eslint/types@5.27.0":
-  version "5.27.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/types/-/types-5.27.0.tgz"
-  integrity sha512-lY6C7oGm9a/GWhmUDOs3xAVRz4ty/XKlQ2fOLr8GAIryGn0+UBOoJDWyHer3UgrHkenorwvBnphhP+zPmzmw0A==
-
-"@typescript-eslint/typescript-estree@5.27.0":
-  version "5.27.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-5.27.0.tgz"
-  integrity sha512-QywPMFvgZ+MHSLRofLI7BDL+UczFFHyj0vF5ibeChDAJgdTV8k4xgEwF0geFhVlPc1p8r70eYewzpo6ps+9LJQ==
+"@typescript-eslint/scope-manager@5.62.0":
+  version "5.62.0"
+  resolved "https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-5.62.0.tgz"
+  integrity sha512-VXuvVvZeQCQb5Zgf4HAxc04q5j+WrNAtNh9OwCsCgpKqESMTu3tF/jhZ3xG6T4NZwWl65Bg8KuS2uEvhSfLl0w==
   dependencies:
-    "@typescript-eslint/types" "5.27.0"
-    "@typescript-eslint/visitor-keys" "5.27.0"
+    "@typescript-eslint/types" "5.62.0"
+    "@typescript-eslint/visitor-keys" "5.62.0"
+
+"@typescript-eslint/scope-manager@6.19.0":
+  version "6.19.0"
+  resolved "https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-6.19.0.tgz"
+  integrity sha512-dO1XMhV2ehBI6QN8Ufi7I10wmUovmLU0Oru3n5LVlM2JuzB4M+dVphCPLkVpKvGij2j/pHBWuJ9piuXx+BhzxQ==
+  dependencies:
+    "@typescript-eslint/types" "6.19.0"
+    "@typescript-eslint/visitor-keys" "6.19.0"
+
+"@typescript-eslint/types@5.62.0":
+  version "5.62.0"
+  resolved "https://registry.npmjs.org/@typescript-eslint/types/-/types-5.62.0.tgz"
+  integrity sha512-87NVngcbVXUahrRTqIK27gD2t5Cu1yuCXxbLcFtCzZGlfyVWWh8mLHkoxzjsB6DDNnvdL+fW8MiwPEJyGJQDgQ==
+
+"@typescript-eslint/types@6.19.0":
+  version "6.19.0"
+  resolved "https://registry.npmjs.org/@typescript-eslint/types/-/types-6.19.0.tgz"
+  integrity sha512-lFviGV/vYhOy3m8BJ/nAKoAyNhInTdXpftonhWle66XHAtT1ouBlkjL496b5H5hb8dWXHwtypTqgtb/DEa+j5A==
+
+"@typescript-eslint/typescript-estree@5.62.0":
+  version "5.62.0"
+  resolved "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-5.62.0.tgz"
+  integrity sha512-CmcQ6uY7b9y694lKdRB8FEel7JbU/40iSAPomu++SjLMntB+2Leay2LO6i8VnJk58MtE9/nQSFIH6jpyRWyYzA==
+  dependencies:
+    "@typescript-eslint/types" "5.62.0"
+    "@typescript-eslint/visitor-keys" "5.62.0"
     debug "^4.3.4"
     globby "^11.1.0"
     is-glob "^4.0.3"
     semver "^7.3.7"
     tsutils "^3.21.0"
 
-"@typescript-eslint/visitor-keys@5.27.0":
-  version "5.27.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-5.27.0.tgz"
-  integrity sha512-46cYrteA2MrIAjv9ai44OQDUoCZyHeGIc4lsjCUX2WT6r4C+kidz1bNiR4017wHOPUythYeH+Sc7/cFP97KEAA==
+"@typescript-eslint/typescript-estree@6.19.0":
+  version "6.19.0"
+  resolved "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-6.19.0.tgz"
+  integrity sha512-o/zefXIbbLBZ8YJ51NlkSAt2BamrK6XOmuxSR3hynMIzzyMY33KuJ9vuMdFSXW+H0tVvdF9qBPTHA91HDb4BIQ==
   dependencies:
-    "@typescript-eslint/types" "5.27.0"
+    "@typescript-eslint/types" "6.19.0"
+    "@typescript-eslint/visitor-keys" "6.19.0"
+    debug "^4.3.4"
+    globby "^11.1.0"
+    is-glob "^4.0.3"
+    minimatch "9.0.3"
+    semver "^7.5.4"
+    ts-api-utils "^1.0.1"
+
+"@typescript-eslint/visitor-keys@5.62.0":
+  version "5.62.0"
+  resolved "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-5.62.0.tgz"
+  integrity sha512-07ny+LHRzQXepkGg6w0mFY41fVUNBrL2Roj/++7V1txKugfjm/Ci/qSND03r2RhlJhJYMcTn9AhhSSqQp0Ysyw==
+  dependencies:
+    "@typescript-eslint/types" "5.62.0"
     eslint-visitor-keys "^3.3.0"
+
+"@typescript-eslint/visitor-keys@6.19.0":
+  version "6.19.0"
+  resolved "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-6.19.0.tgz"
+  integrity sha512-hZaUCORLgubBvtGpp1JEFEazcuEdfxta9j4iUwdSAr7mEsYYAp3EAUyCZk3VEEqGj6W+AV4uWyrDGtrlawAsgQ==
+  dependencies:
+    "@typescript-eslint/types" "6.19.0"
+    eslint-visitor-keys "^3.4.1"
 
 "@vercel/commerce-bigcommerce@^0.0.1", "@vercel/commerce-bigcommerce@file:C:\\Users\\billy\\source\\repos\\Builder.IO\\nextjs-edge-personalization-demo\\packages\\bigcommerce":
   version "0.0.1"
@@ -2095,7 +2164,7 @@
     "@vercel/fetch" "^6.1.1"
     cookie "^0.4.1"
     immutability-helper "^3.1.1"
-    jsonwebtoken "^8.5.1"
+    jsonwebtoken "^9.0.2"
     lodash.debounce "^4.0.8"
     uuidv4 "^6.2.12"
 
@@ -2103,8 +2172,9 @@
   version "0.0.1"
   resolved "file:packages/commercejs"
   dependencies:
-    "@chec/commerce.js" "^2.8.0"
+    "@chec/commerce.js" "^1.0.0"
     "@vercel/commerce" "^0.0.1"
+    jsonwebtoken "9.0.2"
     lodash.debounce "^4.0.8"
 
 "@vercel/commerce-kibocommerce@^0.0.1", "@vercel/commerce-kibocommerce@file:C:\\Users\\billy\\source\\repos\\Builder.IO\\nextjs-edge-personalization-demo\\packages\\kibocommerce":
@@ -2113,6 +2183,7 @@
   dependencies:
     "@vercel/commerce" "^0.0.1"
     "@vercel/fetch" "^6.1.1"
+    jsonwebtoken "9.0.2"
     lodash.debounce "^4.0.8"
 
 "@vercel/commerce-local@^0.0.1", "@vercel/commerce-local@file:C:\\Users\\billy\\source\\repos\\Builder.IO\\nextjs-edge-personalization-demo\\packages\\local":
@@ -2121,6 +2192,7 @@
   dependencies:
     "@vercel/commerce" "^0.0.1"
     "@vercel/fetch" "^6.1.1"
+    jsonwebtoken "9.0.2"
 
 "@vercel/commerce-ordercloud@^0.0.1", "@vercel/commerce-ordercloud@file:C:\\Users\\billy\\source\\repos\\Builder.IO\\nextjs-edge-personalization-demo\\packages\\ordercloud":
   version "0.0.1"
@@ -2128,6 +2200,7 @@
   dependencies:
     "@vercel/commerce" "^0.0.1"
     "@vercel/fetch" "^6.1.1"
+    jsonwebtoken "9.0.2"
     lodash.debounce "^4.0.8"
     stripe "^8.197.0"
 
@@ -2137,6 +2210,7 @@
   dependencies:
     "@vercel/commerce" "^0.0.1"
     "@vercel/fetch" "^6.1.1"
+    jsonwebtoken "9.0.2"
     lodash.debounce "^4.0.8"
 
 "@vercel/commerce-sfcc@file:C:\\Users\\billy\\source\\repos\\Builder.IO\\nextjs-edge-personalization-demo\\packages\\sfcc":
@@ -2146,6 +2220,7 @@
     "@vercel/commerce" "^0.0.1"
     "@vercel/fetch" "^6.1.1"
     commerce-sdk "^2.7.0"
+    jsonwebtoken "9.0.2"
 
 "@vercel/commerce-shopify@^0.0.1", "@vercel/commerce-shopify@file:C:\\Users\\billy\\source\\repos\\Builder.IO\\nextjs-edge-personalization-demo\\packages\\shopify":
   version "0.0.1"
@@ -2153,6 +2228,7 @@
   dependencies:
     "@vercel/commerce" "^0.0.1"
     "@vercel/fetch" "^6.1.1"
+    jsonwebtoken "9.0.2"
     lodash.debounce "^4.0.8"
 
 "@vercel/commerce-spree@^0.0.1", "@vercel/commerce-spree@file:C:\\Users\\billy\\source\\repos\\Builder.IO\\nextjs-edge-personalization-demo\\packages\\spree":
@@ -2162,6 +2238,7 @@
     "@spree/storefront-api-v2-sdk" "^5.1.1"
     "@vercel/commerce" "^0.0.1"
     "@vercel/fetch" "^6.1.1"
+    jsonwebtoken "9.0.2"
     lodash.debounce "^4.0.8"
     swr "^1.2.0"
 
@@ -2171,6 +2248,7 @@
   dependencies:
     "@vercel/commerce" "^0.0.1"
     "@vercel/fetch" "^6.1.1"
+    jsonwebtoken "9.0.2"
     lodash.debounce "^4.0.8"
     swell-js "^4.0.0-next.0"
 
@@ -2180,6 +2258,7 @@
   dependencies:
     "@vercel/commerce" "^0.0.1"
     "@vercel/fetch" "^6.1.1"
+    jsonwebtoken "9.0.2"
 
 "@vercel/commerce@^0.0.1", "@vercel/commerce@file:C:\\Users\\billy\\source\\repos\\Builder.IO\\nextjs-edge-personalization-demo\\packages\\commerce":
   version "0.0.1"
@@ -2189,6 +2268,7 @@
     deepmerge "^4.2.2"
     import-cwd "^3.0.0"
     js-cookie "^3.0.1"
+    jsonwebtoken "9.0.2"
     swr "^1.2.0"
 
 "@vercel/fetch-cached-dns@^2.0.2":
@@ -2338,9 +2418,9 @@ acorn-walk@^8.1.1:
   integrity sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==
 
 acorn-walk@^8.2.0:
-  version "8.2.0"
-  resolved "https://registry.npmjs.org/acorn-walk/-/acorn-walk-8.2.0.tgz"
-  integrity sha512-k+iyHEuPgSw6SbuDpGQM+06HQUa04DZ3o+F6CSzXMvvI5KMvnaEqXe+YVe555R9nn6GPt404fos4wcgpw12SDA==
+  version "8.3.2"
+  resolved "https://registry.npmjs.org/acorn-walk/-/acorn-walk-8.3.2.tgz"
+  integrity sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==
 
 "acorn@^6.0.0 || ^7.0.0 || ^8.0.0", acorn@^8.0.4, acorn@^8.11.3, acorn@^8.4.1, acorn@^8.7.0, acorn@^8.7.1:
   version "8.11.3"
@@ -2781,6 +2861,13 @@ brace-expansion@^1.1.7:
   dependencies:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
+
+brace-expansion@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/brace-expansion/-/brace-expansion-2.0.1.tgz"
+  integrity sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==
+  dependencies:
+    balanced-match "^1.0.0"
 
 braces@^1.8.2:
   version "1.8.5"
@@ -3951,12 +4038,12 @@ eslint-visitor-keys@^2.0.0:
   resolved "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-2.1.0.tgz"
   integrity sha512-0rSmRBzXgDzIsD6mGdJgevzgezI534Cer5L/vyMX0kHzT/jiB43jRhd9YUlMGYLQy2zprNmoT8qasCGtY+QaKw==
 
-eslint-visitor-keys@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-3.3.0.tgz"
-  integrity sha512-mQ+suqKJVyeuwGYHAdjMFqjCyfl8+Ldnxuyp3ldiMBFKkvytrXUZWaiPCEav8qDHKty44bD+qV1IP4T+w+xXRA==
+eslint-visitor-keys@^3.3.0, eslint-visitor-keys@^3.4.1:
+  version "3.4.3"
+  resolved "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-3.4.3.tgz"
+  integrity sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag==
 
-eslint@*, "eslint@^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8", "eslint@^3 || ^4 || ^5 || ^6 || ^7 || ^8", "eslint@^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0", "eslint@^6.0.0 || ^7.0.0 || ^8.0.0", "eslint@^7.23.0 || ^8.0.0", eslint@^8.6.0, eslint@>=5, eslint@>=7.0.0:
+eslint@*, "eslint@^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8", "eslint@^3 || ^4 || ^5 || ^6 || ^7 || ^8", "eslint@^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0", "eslint@^6.0.0 || ^7.0.0 || ^8.0.0", "eslint@^7.0.0 || ^8.0.0", "eslint@^7.23.0 || ^8.0.0", eslint@^8.6.0, eslint@>=5, eslint@>=7.0.0:
   version "8.16.0"
   resolved "https://registry.npmjs.org/eslint/-/eslint-8.16.0.tgz"
   integrity sha512-MBndsoXY/PeVTDJeWsYj7kLZ5hQpJOfMYLsF6LicLHQWbRDG19lK5jOix4DPl8yY4SUFcE3txy86OzFLWT+yoA==
@@ -5407,6 +5494,13 @@ isobject@^3.0.1:
   resolved "https://registry.npmjs.org/isobject/-/isobject-3.0.1.tgz"
   integrity sha512-WhB9zCku7EGTj/HQQRz5aUQEUeoQZH2bWcltRErOpymJ4boYE6wL9Tbr23krRPSZ+C5zqNSrSw+Cc7sZZ4b7vg==
 
+isolated-vm@^4.5.0:
+  version "4.6.0"
+  resolved "https://registry.npmjs.org/isolated-vm/-/isolated-vm-4.6.0.tgz"
+  integrity sha512-MEnfC/54q5PED3VJ9UJYJPOlU6mYFHS3ivR9E8yeNNBEFRFUNBnY0xO4Rj3D/SOtFKPNmsQp9NWUYSKZqAoZiA==
+  dependencies:
+    prebuild-install "^7.1.1"
+
 isomorphic-ws@^5.0.0, isomorphic-ws@5.0.0:
   version "5.0.0"
   resolved "https://registry.npmjs.org/isomorphic-ws/-/isomorphic-ws-5.0.0.tgz"
@@ -6015,6 +6109,13 @@ minimatch@4.2.3:
   dependencies:
     brace-expansion "^1.1.7"
 
+minimatch@9.0.3:
+  version "9.0.3"
+  resolved "https://registry.npmjs.org/minimatch/-/minimatch-9.0.3.tgz"
+  integrity sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==
+  dependencies:
+    brace-expansion "^2.0.1"
+
 minimist@^1.2.0, minimist@^1.2.3, minimist@^1.2.6:
   version "1.2.6"
   resolved "https://registry.npmjs.org/minimist/-/minimist-1.2.6.tgz"
@@ -6216,11 +6317,12 @@ net@^1.0.2:
     clsx "^1.1.1"
     email-validator "^2.0.4"
     js-cookie "^3.0.1"
+    jsonwebtoken "9.0.2"
     keen-slider "^6.6.3"
     lodash.random "^3.2.0"
     lodash.throttle "^4.1.1"
     net "^1.0.2"
-    next "^12.2.5"
+    next "^14.1.0"
     next-seo "^5.5.0"
     next-themes "^0.0.15"
     postcss "^8.3.5"
@@ -8273,6 +8375,11 @@ traverse@^0.6.6:
   resolved "https://registry.npmjs.org/traverse/-/traverse-0.6.6.tgz"
   integrity sha512-kdf4JKs8lbARxWdp7RKdNzoJBhGUcIalSYibuGyHJbmk40pOysQ0+QPvlkCOICOivDWU2IJo2rkrxyTK2AH4fw==
 
+ts-api-utils@^1.0.1:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/ts-api-utils/-/ts-api-utils-1.0.3.tgz"
+  integrity sha512-wNMeqtMz5NtwpT/UZGY5alT+VoKdSsOOP/kqHFcUW1P/VRhH2wJ48+DN2WwUliNbQ976ETwDL0Ifd2VVvgonvg==
+
 ts-log@^2.2.3:
   version "2.2.4"
   resolved "https://registry.npmjs.org/ts-log/-/ts-log-2.2.4.tgz"
@@ -8412,10 +8519,15 @@ type-fest@^0.21.3:
   resolved "https://registry.npmjs.org/type-fest/-/type-fest-0.21.3.tgz"
   integrity sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==
 
-typescript@^4.5.4, typescript@>=2.7, "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta", typescript@>=3.3.1, typescript@>=4:
-  version "4.7.2"
-  resolved "https://registry.npmjs.org/typescript/-/typescript-4.7.2.tgz"
-  integrity sha512-Mamb1iX2FDUpcTRzltPxgWMKy3fhg0TN378ylbktPGPK/99KbDtMQ4W1hwgsbPAsG3a0xKa1vmw4VKZQbkvz5A==
+typescript@^4.5.4:
+  version "4.9.5"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz"
+  integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
+
+typescript@^5.3.3, typescript@>=2.7, "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta", typescript@>=3.3.1, typescript@>=4, typescript@>=4.2.0:
+  version "5.3.3"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-5.3.3.tgz"
+  integrity sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==
 
 typescript@4.3.4:
   version "4.3.4"
@@ -8639,7 +8751,7 @@ value-or-promise@^1.0.11, value-or-promise@^1.0.12:
   resolved "https://registry.npmjs.org/value-or-promise/-/value-or-promise-1.0.12.tgz"
   integrity sha512-Z6Uz+TYwEqE7ZN50gwn+1LCVo9ZVrpxRPOhOLnncYkY1ZzOYtrX8Fwf/rFktZ8R5mJms6EZf5TqNOMeZmnPq9Q==
 
-vm2@^3.9.10:
+vm2@^3.9.18:
   version "3.9.19"
   resolved "https://registry.npmjs.org/vm2/-/vm2-3.9.19.tgz"
   integrity sha512-J637XF0DHDMV57R6JyVsTak7nIL8gy5KH4r1HiwWLf/4GBbb5MKL5y7LpmF4A8E2nR6XmzpmMFQ7V7ppPTmUQg==
