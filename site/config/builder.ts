@@ -1,10 +1,12 @@
 import dynamic from 'next/dynamic'
 import { Builder, withChildren } from '@builder.io/react'
 
-export default {
+const builderConfig = {
   // Put your Builder public API key here:
-  apiKey: '1c3b72c36b194b318c40d99ec0a3bf75',
+  apiKey: 'bpk-c21f7b1af2ad47299f5933dae71af532',
 }
+
+export default builderConfig;
 
 // Register some components to be used in the drag and drop editor
 // https://www.builder.io/c/docs/custom-components-setup
