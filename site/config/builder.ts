@@ -15,7 +15,7 @@ Builder.registerComponent(
   {
     name: 'Hero',
     image:
-      'https://tabler-icons.io/static/tabler-icons/icons-png/blockquote.png',
+      'https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa40b94ab257547c48e4ed8615d3c9d68',
     inputs: [
       {
         name: 'headline',
@@ -35,14 +35,14 @@ Builder.registerComponent(
   dynamic(() => import('../components/common/Searchbar')),
   {
     name: 'Searchbar',
-    image: 'https://tabler-icons.io/static/tabler-icons/icons-png/search.png',
+    image: 'https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Ff1dee4516d6f49439b6eca475e4e6848',
   }
 )
 Builder.registerComponent(
   dynamic(() => import('../components/ui/Rating')),
   {
     name: 'Rating',
-    image: 'https://tabler-icons.io/static/tabler-icons/icons-png/stars.png',
+    image: 'https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F086de4d35afb4b86970018a5c1f58df8',
     inputs: [
       {
         name: 'value',
@@ -57,7 +57,7 @@ Builder.registerComponent(
   {
     name: 'Button',
     image:
-      'https://tabler-icons.io/static/tabler-icons/icons-png/hand-click.png',
+      'https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fadc7254196504a81b673f48f17185469',
     inputs: [
       {
         name: 'link',
@@ -85,7 +85,7 @@ Builder.registerComponent(
       minHeight: '100px',
     },
     image:
-      'https://tabler-icons.io/static/tabler-icons/icons-png/box-margin.png',
+      'https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F1acf9d437adb4130a6b15fcf761fcc98',
   }
 )
 
@@ -94,7 +94,7 @@ Builder.registerComponent(
   {
     name: 'Product Cell',
     image:
-      'https://tabler-icons.io/static/tabler-icons/icons-png/shopping-cart.png',
+      'https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fbe08488e714c4db0ad3739261b671f42',
     inputs: [
       // Use an E-commerce integration for your platform to auto populate this list:
       // https://www.builder.io/c/docs/plugins-ecom-overview
@@ -122,7 +122,7 @@ Builder.registerComponent(
     name: 'Collapse',
     canHaveChildren: true,
     image:
-      'https://tabler-icons.io/static/tabler-icons/icons-png/layout-bottombar-collapse.png',
+      'https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F8c248a867984405eb470b26978267528',
     inputs: [
       { name: 'title', type: 'text', defaultValue: 'Drop blocks inside me!' },
     ],
