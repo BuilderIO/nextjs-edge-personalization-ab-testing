@@ -501,10 +501,10 @@
     "@babel/helper-validator-identifier" "^7.18.6"
     to-fast-properties "^2.0.0"
 
-"@builder.io/personalization-utils@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@builder.io/personalization-utils/-/personalization-utils-1.1.1.tgz#d0b0c506a6f07b7e133393a9ee1843519206d3d6"
-  integrity sha512-3uqQaeRicfKCsjCHIWsclFjDrJ7y3tJv1vboOTSFObqykHRCiudNb7BFIvGtpGnOJKhomGlwDfnXM++nU/qqqA==
+"@builder.io/personalization-utils@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@builder.io/personalization-utils/-/personalization-utils-2.0.0.tgz#a1f3e152c012f1c02a82e87b01bf91361eadba1d"
+  integrity sha512-0XKeQA9J/TdGuMlWJeUCpEnvPotvp66xk4pHHVrKhyFhNi74yTtnaP6T+IslEG5aMaz3uRtfBvDRGI8282LlNQ==
   dependencies:
     json-stringify-deterministic "^1.0.6"
 
