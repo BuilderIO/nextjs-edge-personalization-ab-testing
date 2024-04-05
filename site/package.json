@@ -13,7 +13,7 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "@builder.io/personalization-utils": "^1.1.1",
+    "@builder.io/personalization-utils": "^2.0.0",
     "@builder.io/react": "^2.0.9",
     "@builder.io/utils": "^1.1.3",
     "@netlify/plugin-nextjs": "^4.29.3",
@@ -70,43 +70,20 @@
     "typescript": "4.3.4"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
-      "eslint",
-      "prettier --write",
-      "git add"
-    ],
-    "**/*.{md,mdx,json}": [
-      "prettier --write",
-      "git add"
-    ]
+    "**/*.{js,jsx,ts,tsx}": ["eslint", "prettier --write", "git add"],
+    "**/*.{md,mdx,json}": ["prettier --write", "git add"]
   },
   "next-unused": {
     "alias": {
-      "@lib/*": [
-        "lib/*"
-      ],
-      "@assets/*": [
-        "assets/*"
-      ],
-      "@config/*": [
-        "config/*"
-      ],
-      "@components/*": [
-        "components/*"
-      ],
-      "@utils/*": [
-        "utils/*"
-      ]
+      "@lib/*": ["lib/*"],
+      "@assets/*": ["assets/*"],
+      "@config/*": ["config/*"],
+      "@components/*": ["components/*"],
+      "@utils/*": ["utils/*"]
     },
     "debug": true,
-    "include": [
-      "components",
-      "lib",
-      "pages"
-    ],
+    "include": ["components", "lib", "pages"],
     "exclude": [],
-    "entrypoints": [
-      "pages"
-    ]
+    "entrypoints": ["pages"]
   }
 }

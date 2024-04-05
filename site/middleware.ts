@@ -1,5 +1,5 @@
 import { NextResponse, NextRequest } from 'next/server'
-import { getPersonlizedURL } from '@builder.io/personalization-utils/next'
+import { getPersonalizedURL } from '@builder.io/personalization-utils/next'
 
 // Any page not included in here needs to handle the personalization rewrite
 const noPersonalizePaths = [
@@ -26,7 +26,7 @@ const shouldRewrite = (pathname: string) => {
 export default function middleware(request: NextRequest) {
   if (shouldRewrite(request.nextUrl.pathname)) {
     const sourcePath = request.nextUrl.pathname
-    const rewrite = getPersonlizedURL(request, {
+    const rewrite = getPersonalizedURL(request, {
       cookiesPrefix: 'personalization',
     })
 
